@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="" class="header-logo">
+        <img src="https://via.placeholder.com/74x23" alt="Логотип Pink">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">ПИНК: Форма</h1>
+    <section class="content-header">
+      <div class="content-header__wrapper">
+        <h2>Конкурс на самое
+          безбашенное
+          путешествие с Пинк</h2>
+      </div>
+    </section>
+    <section class="page-promo">
+      <div class="page-promo__wrapper">
+        <h2 class="visually-hidden">Промо</h2>
+        <p class="page-promo__text">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+      </div>
+    </section>
+    <section class="page-filter">
+      <div class="page-filter__wrapper">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-user">
+            <legend class="visually-hidden">Фамилия и имя</legend>
+            <ul class="filter-user__list">
+              <li class="filter-user__item">
+                <label class="filter-user__label" for="second-name">Фамилия</label>
+                <input class="filter-user__input" type="text" name="second-name" id="second-name"
+                  placeholder="Укажите фамилию*">
+              </li>
+              <li class="filter-user__item">
+                <label class="filter-user__label" for="first-name">Имя</label>
+                <input class="filter-user__input" type="text" name="first-name" id="first-name"
+                  placeholder="Введите ваше имя*">
+              </li>
+              <li class="filter-user__item">
+                <label class="filter-user__label" for="third-name">Имя</label>
+                <input class="filter-user__input" type="text" name="third-name" id="third-name"
+                  placeholder="Ну и отчество тоже*">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-params">
+            <legend class="filter-params__legend">Ваши безбашенные
+              достижения в путешествии</legend>
+            <ul class="filter-params__list">
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Сделал селфи с акулой
+                  <input class="filter-params__checkbox" type="checkbox" name="selfi" id="selfi" checked>
+                </label>
+              </li>
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Обгорел на пляже
+                  <input class="filter-params__checkbox" type="checkbox" name="zagar" id="zagar" checked>
+                </label>
+              </li>
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Видел Чака Норриса
+                  <input class="filter-params__checkbox" type="checkbox" name="chuck-noris" id="chuck-noris">
+                </label>
+              </li>
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Накупил сувениров
+                  <input class="filter-params__checkbox" type="checkbox" name="suvenir" id="suvenir">
+                </label>
+              </li>
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Удержал башню
+                  <input class="filter-params__checkbox" type="checkbox" name="bashnia" id="bashnia" checked>
+                </label>
+              </li>
+              <li class="filter-params__item">
+                <label class="filter-params__label">
+                  Разгромил отель
+                  <input class="filter-params__checkbox" type="checkbox" name="hotel" id="hotel">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-contacts">
+            <legend class="filter-contacts__legent">Контактная информация</legend>
+            <ul class="filter-contacts__list">
+              <li class="filter-contacts__item">
+                <label class="filter-contacts__label" for="phone">Номер телефона</label>
+                <input class="filter-contacts__input" type="text" name="photne" id="phone"
+                  placeholder="Номер, пожалуйста">
+              </li>
+              <li class="filter-contacts__item">
+                <label class="filter-contacts__label" for="phone">АДРЕС ПОЧТЫ</label>
+                <input class="filter-contacts__input" type="text" name="photne" id="email"
+                  placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-app">
+            <legend class="filter-app__legend">С каким приложением
+              путешествовали?</legend>
+            <ul class="filter-app__list">
+              <li class="filter-app__item">
+                <label class="filter-app__label" for="ios">Pink для iOS</label>
+                <input class="filter-app__radio" type="radio" name="ios" id="ios" checked>
+              </li>
+              <li class="filter-app__item">
+                <label class="filter-app__label" for="android">Pink на Android</label>
+                <input class="filter-app__radio" type="radio" name="android" id="android">
+              </li>
+              <li class="filter-app__item">
+                <label class="filter-app__label" for="windows">Windows Phone</label>
+                <input class="filter-app__radio" type="radio" name="windows" id="windows">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-feedback">
+            <legend class="filter-feedback__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <label class="visually-hidden" for="text">Фидбэк</label>
+            <input class="filter-feedback__text" type="text" id="text">
+          </fieldset>
+          <button class="filter-submit" type="submit">Отправить форму</button>
+          <p class="filter-note"><i class="filter-note__emphasis
+          ">*</i>—обязательные поля</p>
+        </form>
+      </div>
+    </section>
+    <section class="popup popup-error">
+      <div class="popup__wrapper">
+        <h2 class="popup__header popup-error__header">Что-то пошло не так!</h2>
+        <p class="popup__text popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="popup__button popup-error__button" type="button">ОК</button>
+      </div>
+    </section>
+    <section class="popup popup-success">
+      <div class="popup__wrapper">
+        <h2 class="popup__header popup-success__header">Что-то пошло не так!</h2>
+        <p class="popup__text popup-success__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
+        </p>
+        <button class="popup__button popup-success__button" type="button">ОК</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <img class="footer-logo" src="https://via.placeholder.com/145x40" alt="Логотип Пинк">
+      <ul class="footer-socials">
+        <li class="footer-socials__item">
+          <img src="https://via.placeholder.com/48x48" alt="twitter">
+        </li>
+        <li class="footer-socials__item">
+          <img src="https://via.placeholder.com/48x48" alt="facebook">
+        </li>
+        <li class="footer-socials__item">
+          <img src="https://via.placeholder.com/48x48" alt="arrow">
+        </li>
+      </ul>
+      <div class="footer-about">
+        <p class="footer-about__text">Разработанно</p>
+        <img class="footer-about__img" src="https://via.placeholder.com/27x37" alt="logo">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
