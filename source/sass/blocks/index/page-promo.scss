@@ -28,31 +28,6 @@
     list-style: none;
   }
 
-  &__download {
-    padding: 15px;
-
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    text-decoration: none;
-    color: color.$colorwhite;
-
-    border: 3px solid color.$colorwhite;
-    box-sizing: border-box;
-    border-radius: 29px;
-  }
-
-  &__download:hover {
-    color: color.$pinkcolor;
-    background-color: color.$colorwhite;
-  }
-
-  &__download:active {
-    color: rgba(color.$pinkcolor, 0.3);
-  }
-
   &__text {
     font-family: "Open Sans", sans-serif;
     font-style: normal;

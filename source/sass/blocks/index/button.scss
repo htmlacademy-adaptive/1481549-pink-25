@@ -1,0 +1,23 @@
+@use '../shared/colors.scss' as color;
+@use '../shared/mixins.scss' as mix;
+
+.button {
+  padding: 15px;
+
+  @include mix.font(normal, 700, 18px, 18px);
+  text-decoration: none;
+  color: color.$colorwhite;
+
+  border: 3px solid color.$colorwhite;
+  box-sizing: border-box;
+  border-radius: 29px;
+
+  &:hover {
+    color: color.$pinkcolor;
+    background-color: color.$colorwhite;
+  }
+
+  &:active {
+    color: rgba(color.$pinkcolor, 0.3);
+  }
+}
