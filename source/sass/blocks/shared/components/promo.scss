@@ -2,6 +2,10 @@
 @use '../mixins.scss' as mix;
 
 .promo {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
   &__text {
     @include mix.font(normal, 400, 14px, 30px);
     color: color.$textcolor;

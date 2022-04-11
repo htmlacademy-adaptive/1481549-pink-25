@@ -1,0 +1,17 @@
+@use '../shared/colors.scss' as color;
+@use '../shared/mixins.scss' as mix;
+
+.filter-app {
+  background-color: color.$lightgray;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

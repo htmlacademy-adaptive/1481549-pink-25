@@ -52,7 +52,7 @@
     <h1 class="visually-hidden">ПИНК: Форма</h1>
     <section class="content-header">
       <div class="content-header__wrapper">
-        <h2>Конкурс на самое
+        <h2 class="content-header__header">Конкурс на самое
           безбашенное
           путешествие с Пинк</h2>
       </div>
@@ -66,114 +66,155 @@
       </div>
     </section>
     <section class="page-filter">
-      <div class="page-filter__wrapper">
-        <h2 class="visually-hidden">Фильтр</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-user">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-user">
+          <div class="filter-user__wrapper">
             <legend class="visually-hidden">Фамилия и имя</legend>
             <ul class="filter-user__list">
               <li class="filter-user__item">
-                <label class="filter-user__label" for="second-name">Фамилия</label>
-                <input class="filter-user__input" type="text" name="second-name" id="second-name"
-                  placeholder="Укажите фамилию*">
+                <div class="text-input">
+                  <label class="text-input__label filter-user__label" for="second-name">Фамилия:</label>
+                  <input class="text-input__input filter-user__input" type="text" name="second-name" id="second-name"
+                    placeholder="Укажите фамилию*">
+                </div>
               </li>
               <li class="filter-user__item">
-                <label class="filter-user__label" for="first-name">Имя</label>
-                <input class="filter-user__input" type="text" name="first-name" id="first-name"
-                  placeholder="Введите ваше имя*">
+                <div class="text-input">
+                  <label class="text-input__label filter-user__label" for="first-name">Имя:</label>
+                  <input class="text-input__input filter-user__input" type="text" name="first-name" id="first-name"
+                    placeholder="Введите ваше имя*">
+                </div>
               </li>
               <li class="filter-user__item">
-                <label class="filter-user__label" for="third-name">Имя</label>
-                <input class="filter-user__input" type="text" name="third-name" id="third-name"
-                  placeholder="Ну и отчество тоже*">
+                <div class="text-input">
+                  <label class="text-input__label filter-user__label" for="third-name">Отчество:</label>
+                  <input class="text-input__input filter-user__input" type="text" name="third-name" id="third-name"
+                    placeholder="Ну и отчество тоже*">
+                </div>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter-params">
-            <legend class="filter-params__legend">Ваши безбашенные
-              достижения в путешествии</legend>
-            <ul class="filter-params__list">
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Сделал селфи с акулой
-                  <input class="filter-params__checkbox" type="checkbox" name="selfi" id="selfi" checked>
-                </label>
-              </li>
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Обгорел на пляже
-                  <input class="filter-params__checkbox" type="checkbox" name="zagar" id="zagar" checked>
-                </label>
-              </li>
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Видел Чака Норриса
-                  <input class="filter-params__checkbox" type="checkbox" name="chuck-noris" id="chuck-noris">
-                </label>
-              </li>
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Накупил сувениров
-                  <input class="filter-params__checkbox" type="checkbox" name="suvenir" id="suvenir">
-                </label>
-              </li>
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Удержал башню
-                  <input class="filter-params__checkbox" type="checkbox" name="bashnia" id="bashnia" checked>
-                </label>
-              </li>
-              <li class="filter-params__item">
-                <label class="filter-params__label">
-                  Разгромил отель
-                  <input class="filter-params__checkbox" type="checkbox" name="hotel" id="hotel">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-contacts">
-            <legend class="filter-contacts__legent">Контактная информация</legend>
-            <ul class="filter-contacts__list">
-              <li class="filter-contacts__item">
-                <label class="filter-contacts__label" for="phone">Номер телефона</label>
-                <input class="filter-contacts__input" type="text" name="photne" id="phone"
-                  placeholder="Номер, пожалуйста">
-              </li>
-              <li class="filter-contacts__item">
-                <label class="filter-contacts__label" for="phone">АДРЕС ПОЧТЫ</label>
-                <input class="filter-contacts__input" type="text" name="photne" id="email"
-                  placeholder="Введите почту *">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-app">
-            <legend class="filter-app__legend">С каким приложением
-              путешествовали?</legend>
-            <ul class="filter-app__list">
-              <li class="filter-app__item">
-                <label class="filter-app__label" for="ios">Pink для iOS</label>
-                <input class="filter-app__radio" type="radio" name="ios" id="ios" checked>
-              </li>
-              <li class="filter-app__item">
-                <label class="filter-app__label" for="android">Pink на Android</label>
-                <input class="filter-app__radio" type="radio" name="android" id="android">
-              </li>
-              <li class="filter-app__item">
-                <label class="filter-app__label" for="windows">Windows Phone</label>
-                <input class="filter-app__radio" type="radio" name="windows" id="windows">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-feedback">
-            <legend class="filter-feedback__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-            <label class="visually-hidden" for="text">Фидбэк</label>
-            <input class="filter-feedback__text" type="text" id="text">
-          </fieldset>
-          <button class="filter-submit" type="submit">Отправить форму</button>
-          <p class="filter-note"><i class="filter-note__emphasis
-          ">*</i>—обязательные поля</p>
-        </form>
-      </div>
+          </div>
+        </fieldset>
+        <div class="filter-params">
+          <div class="filter-params__wrapper">
+            <fieldset class="fieldset filter-params__fieldset">
+              <legend class="fieldset__legend filter-params__legend">Ваши безбашенные
+                достижения в путешествии</legend>
+              <ul class="filter-params__list">
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="selfi"
+                      id="selfi" checked>
+                    <label class="checkbox__label" for="selfi">Сделал селфи с акулой</label>
+                  </div>
+                </li>
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="beach"
+                      id="beach" checked>
+                    <label class="checkbox__label" for="beach">Обгорел на пляже</label>
+                  </div>
+                </li>
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="chuck"
+                      id="chuck">
+                    <label class="checkbox__label" for="chuck">Видел Чака Норриса</label>
+                  </div>
+                </li>
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="relic"
+                      id="relic">
+                    <label class="checkbox__label" for="relic">Накупил сувениров</label>
+                  </div>
+                </li>
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="tower"
+                      id="tower" checked>
+                    <label class="checkbox__label" for="tower">Удержал башню</label>
+                  </div>
+                </li>
+                <li class="filter-params__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox" name="hotel"
+                      id="hotel">
+                    <label class="checkbox__label" for="hotel">Разгромил отель</label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="filter-contacts">
+          <div class="filter-contacts__wrapper">
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend filter-contacts__legend">Контактная информация</legend>
+              <ul class="filter-contacts__list">
+                <li class="filter-contacts__item">
+                  <div class="text-input">
+                    <label class="text-input__label filter-contacts__label" for="phone">Номер телефона</label>
+                    <input class="text-input__input filter-contacts__input" type="text" name="photne" id="phone"
+                      placeholder="Номер, пожалуйста">
+                  </div>
+                </li>
+                <li class="filter-contacts__item">
+                  <div class="text-input">
+                    <label class="text-input__label filter-contacts__label" for="phone">АДРЕС ПОЧТЫ</label>
+                    <input class="text-input__input filter-contacts__input" type="text" name="phone" id="email"
+                      placeholder="Введите почту *">
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="filter-app">
+          <div class="filter-app__wrapper">
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend filter-app__legend">С каким приложением
+                путешествовали?</legend>
+              <ul class="filter-app__list">
+                <li class="filter-app__item">
+                  <div class="radio">
+                    <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app" id="ios"
+                      checked>
+                    <label class="radio__label filter-app__label" for="ios">Pink для iOS</label>
+                  </div>
+                </li>
+                <li class="filter-app__item">
+                  <div class="radio">
+                    <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app" id="android">
+                    <label class="radio__label filter-app__label" for="android">Pink на Android</label>
+                  </div>
+                </li>
+                <li class="filter-app__item">
+                  <div class="radio">
+                    <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app" id="windows">
+                    <label class="radio__label filter-app__label" for="windows">Windows Phone</label>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="filter-feedback">
+          <div class="filter-feedback__wrapper">
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend filter-feedback__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <label class="visually-hidden" for="feedback">Фидбэк</label>
+              <textarea class="filter-feedback__textarea" name="feedback" id="feedback" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="submit-form">
+          <button class="submit submit-form__button" type="submit">Отправить форму</button>
+          <p class="submit-form__note"><i class="submit-form__emphasis">*</i> — обязательные поля</p>
+        </div>
+      </form>
     </section>
     <section class="popup popup-error">
       <div class="popup__wrapper">
@@ -189,7 +230,7 @@
         <p class="popup__text popup-success__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
           заполнить
         </p>
-        <button class="popup__button popup-success__button" type="button">ОК</button>
+        <button class="submit popup__button popup-success__button" type="button">ОК</button>
       </div>
     </section>
   </main>
