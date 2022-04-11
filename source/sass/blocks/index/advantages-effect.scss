@@ -1,0 +1,22 @@
+@use '../shared/colors.scss' as color;
+@use '../shared/mixins.scss' as mix;
+
+.advantages-effect {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include mix.font(normal, 700, 30px, 36px);
+  }
+
+  &__text {
+    @include mix.font(normal, 400, 14px, 24px);
+  }
+
+  &__link {
+    @include mix.font(normal, 400, 14px, 24px);
+    color: color.$pinkcolor;
+  }
+}

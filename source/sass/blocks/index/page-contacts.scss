@@ -1,0 +1,23 @@
+@use '../shared/colors.scss' as color;
+@use '../shared/mixins.scss' as mix;
+
+.page-contacts {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    @include mix.font(normal, 300, 24px, 120%);
+  }
+
+  &__header {
+    @include mix.font(normal, 700, 18px, 25px);
+  }
+
+  &__link {
+    @include mix.font(normal, 300, 24px, 33px);
+    color: color.$pinkcolor;
+    text-decoration: none;
+  }
+}

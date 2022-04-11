@@ -1,0 +1,12 @@
+@use '../shared/colors.scss' as color;
+
+.header-logo {
+  &:hover &__path {
+    fill: color.$pinkcolor;
+  }
+
+  &:active &__path {
+    fill: color.$colorwhite;
+    opacity: 0.3;
+  }
+}

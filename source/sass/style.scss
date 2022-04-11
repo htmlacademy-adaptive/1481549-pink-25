@@ -1,4 +1,41 @@
-// Начните писать стили здесь
-body {
-  background: blue;
-}
+@use "./blocks/index/advantages-content.scss";
+@use "./blocks/index/advantages-effect.scss";
+@use "./blocks/index/advantages-promo.scss";
+@use "./blocks/index/page-advantages.scss";
+@use "./blocks/index/page-contacts.scss";
+@use "./blocks/index/page-main.scss";
+@use "./blocks/index/page-prices.scss";
+@use "./blocks/index/page-promo.scss";
+@use "./blocks/index/page-reviews.scss";
+@use "./blocks/index/prices-table.scss";
+@use "./blocks/index/slider.scss";
+@use "./blocks/index/review.scss";
+
+@use "./blocks/catalog/editor-promo.scss";
+@use "./blocks/catalog/editor.scss";
+@use "./blocks/catalog/favorite-photo.scss";
+@use "./blocks/catalog/page-editor.scss";
+@use "./blocks/catalog/post.scss";
+@use "./blocks/catalog/posts.scss";
+
+@use "./blocks/form/filter-app.scss";
+@use "./blocks/form/filter-contacts.scss";
+@use "./blocks/form/filter-feedback.scss";
+@use "./blocks/form/filter-params.scss";
+@use "./blocks/form/filter-submit.scss";
+@use "./blocks/form/filter-user.scss";
+@use "./blocks/form/page-filter.scss";
+@use "./blocks/form/popup-error.scss";
+@use "./blocks/form/popup-success.scss";
+@use "./blocks/form/popup.scss";
+
+@use "./blocks/shared/content-header.scss";
+@use "./blocks/shared/fonts.scss";
+@use "./blocks/shared/main-nav.scss";
+@use "./blocks/shared/page-body.scss";
+@use "./blocks/shared/page-footer.scss";
+@use "./blocks/shared/page-header.scss";
+@use "./blocks/shared/page.scss";
+@use "./blocks/shared/promo.scss";
+@use "./blocks/shared/visually-hidden.scss";
+@use "./blocks/shared/colors.scss";

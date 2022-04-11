@@ -1,0 +1,65 @@
+@use '../shared/colors.scss' as color;
+
+.page-promo {
+  background: center / cover url("../../../img/back-mobile.jpg") no-repeat;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__slogan {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: color.$colorwhite;
+  }
+
+  &__devices {
+    background-color: color.$graycolor;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__download {
+    padding: 15px;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: color.$colorwhite;
+
+    border: 3px solid color.$colorwhite;
+    box-sizing: border-box;
+    border-radius: 29px;
+  }
+
+  &__download:hover {
+    color: color.$pinkcolor;
+    background-color: color.$colorwhite;
+  }
+
+  &__download:active {
+    color: rgba(color.$pinkcolor, 0.3);
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: color.$colorwhite;
+  }
+}
