@@ -1,0 +1,52 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.page-header {
+  background-color: $maincolor;
+  outline: 2px solid $pinkcolor;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__logo:hover &__path {
+    fill: $pinkcolor;
+  }
+
+  &__logo:active &__path {
+    fill: $colorwhite;
+    opacity: 0.3;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: $colorwhite;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $pinkcolor;
+    }
+
+    &:active {
+      color: $colorwhite;
+      opacity: 0.3;
+    }
+
+    &--active {
+      pointer-events: none;
+      border-bottom: 2px solid $colorwhite;
+    }
+  }
+}

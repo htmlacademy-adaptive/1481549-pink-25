@@ -1,0 +1,30 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.text-input {
+  &__label {
+    @include font(normal, 400, 14px, 30px);
+    color: $pinkcolor;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    padding: 10px;
+    border: 2px solid $inputcolor;
+    border-radius: 1px;
+    outline: none;
+  }
+
+  &__input::placeholder {
+    @include font(normal, 400, 18px, 30px);
+    color: $maincolor;
+  }
+
+  &__input:hover {
+    border-color: $maincolor;
+  }
+
+  &__input:focus {
+    border-color: $pinkcolor;
+  }
+}

@@ -1,0 +1,22 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.advantages-effect {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include font(normal, 700, 30px, 36px);
+  }
+
+  &__text {
+    @include font(normal, 400, 14px, 24px);
+  }
+
+  &__link {
+    @include font(normal, 400, 14px, 24px);
+    color: $pinkcolor;
+  }
+}

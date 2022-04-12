@@ -1,0 +1,17 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.submit-form {
+  width: 900px;
+  margin: 0 auto;
+
+  &__note {
+    @include font(normal, 400, 14px, 30px);
+    color: $maincolor;
+    text-transform: uppercase;
+  }
+
+  &__emphasis {
+    color: $pinkcolor;
+  }
+}

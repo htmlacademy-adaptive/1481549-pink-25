@@ -1,0 +1,19 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.filter-feedback {
+  border: none;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid $inputcolor;
+
+    @include font(normal, 400, 18px, 30px);
+  }
+}

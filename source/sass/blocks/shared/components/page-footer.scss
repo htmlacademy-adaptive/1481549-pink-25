@@ -1,0 +1,19 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.page-footer {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__about-text {
+    @include font(normal, 400, 14px, 18px);
+  }
+}

@@ -1,0 +1,23 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.page-contacts {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    @include font(normal, 300, 24px, 120%);
+  }
+
+  &__header {
+    @include font(normal, 700, 18px, 25px);
+  }
+
+  &__link {
+    @include font(normal, 300, 24px, 33px);
+    color: $pinkcolor;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.filter-contacts {
+  border: none;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

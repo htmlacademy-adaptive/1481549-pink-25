@@ -1,0 +1,24 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.upload-button {
+  padding: 15px;
+
+  @include font(normal, 700, 18px, 18px);
+  text-decoration: none;
+  color: $pinkcolor;
+
+  background-color: $colorwhite;
+  border: 3px solid $pinkcolor;
+  box-sizing: border-box;
+  border-radius: 29px;
+
+  &:hover {
+    color: $colorwhite;
+    background-color: $pinkcolor;
+  }
+
+  &:active {
+    color: rgba($colorwhite, 0.3);
+  }
+}

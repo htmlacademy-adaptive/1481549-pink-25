@@ -1,0 +1,9 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.page-prices {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 568px;
+  padding: 55px;
+
+  border-radius: 1px;
+  background-color: $colorwhite;
+  box-shadow: 0 7px 15px $popupshadow;
+
+  &__header {
+    @include font(normal, 700, 18px, 24px);
+    color: $colorblack;
+  }
+
+  &__text {
+    @include font(normal, 400, 14px, 24px);
+    color: $maincolor;
+  }
+}

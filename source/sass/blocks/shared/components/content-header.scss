@@ -1,0 +1,19 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.content-header {
+  background-color: $graycolor;
+  background-image: url("../../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include font(normal, 300, 24px, 33px);
+    color: $colorwhite;
+  }
+}

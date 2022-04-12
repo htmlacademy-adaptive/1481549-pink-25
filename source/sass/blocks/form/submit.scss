@@ -1,0 +1,26 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.submit {
+  padding: 20px;
+
+  @include font(normal, 700, 18px, 30px);
+  color: $colorwhite;
+  text-transform: uppercase;
+
+  background-color: $submitcolor;
+  border: none;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $submithovercolor;
+  }
+
+  &:active {
+    color: rgba($colorwhite, 0.3);
+  }
+
+  &:disabled {
+    background-color: $inputcolor;
+  }
+}

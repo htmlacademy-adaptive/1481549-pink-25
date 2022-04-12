@@ -1,0 +1,32 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.checkbox {
+  &__label {
+    @include font(normal, 400, 18px, 30px);
+    color: $maincolor;
+  }
+
+  &__input + &__label::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $inputcolor;
+    border-radius: 1px;
+  }
+
+  &__input:checked + &__label::before {
+    background-image: url("../../../img/filters/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__label:hover::before {
+    border-color: $maincolor;
+  }
+
+  &__label:active::before {
+    border-color: $pinkcolor;
+  }
+}

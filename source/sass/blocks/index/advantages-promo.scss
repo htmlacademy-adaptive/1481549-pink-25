@@ -1,0 +1,17 @@
+@import "../shared/colors.scss";
+
+.advantages-promo {
+  &__wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  &__slogan {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+  }
+}

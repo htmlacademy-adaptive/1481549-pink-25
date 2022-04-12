@@ -1,0 +1,27 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.post {
+  background-color: $graylight;
+
+  &__header {
+    @include font(normal, 700, 14px, 24px);
+    color: $maincolor;
+  }
+
+  &__time {
+    @include font(normal, 300, 12px, 24px);
+    color: $maincolor;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font(normal, 400, 14px, 24px);
+    color: $maincolor;
+  }
+
+  &__count {
+    @include font(normal, 400, 12px, 24px);
+    color: $pinkcolor;
+  }
+}

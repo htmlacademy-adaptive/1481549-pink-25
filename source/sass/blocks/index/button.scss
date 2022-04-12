@@ -1,0 +1,23 @@
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+
+.button {
+  padding: 15px;
+
+  @include font(normal, 700, 18px, 18px);
+  text-decoration: none;
+  color: $colorwhite;
+
+  border: 3px solid $colorwhite;
+  box-sizing: border-box;
+  border-radius: 29px;
+
+  &:hover {
+    color: $pinkcolor;
+    background-color: $colorwhite;
+  }
+
+  &:active {
+    color: rgba($pinkcolor, 0.3);
+  }
+}
