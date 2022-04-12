@@ -1,5 +1,5 @@
-@use '../colors.scss' as color;
-@use '../mixins.scss' as mix;
+@import "../colors.scss";
+@import "../mixins.scss";
 
 .page-footer {
   &__wrapper {
@@ -14,6 +14,6 @@
   }
 
   &__about-text {
-    @include mix.font(normal, 400, 14px, 18px);
+    @include font(normal, 400, 14px, 18px);
   }
 }

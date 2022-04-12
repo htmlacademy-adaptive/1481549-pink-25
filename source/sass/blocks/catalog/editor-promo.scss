@@ -1,5 +1,5 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .editor-promo {
   &__wrapper {
@@ -8,6 +8,6 @@
   }
 
   &__text {
-    @include mix.font(normal, 400, 14px, 30px);
+    @include font(normal, 400, 14px, 30px);
   }
 }

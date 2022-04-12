@@ -1,9 +1,9 @@
-@use '../colors.scss' as color;
-@use '../mixins.scss' as mix;
+@import "../colors.scss";
+@import "../mixins.scss";
 
 .page-header {
-  background-color: color.$maincolor;
-  outline: 2px solid red;
+  background-color: $maincolor;
+  outline: 2px solid $pinkcolor;
 
   &__wrapper {
     width: 900px;
@@ -11,11 +11,11 @@
   }
 
   &__logo:hover &__path {
-    fill: color.$pinkcolor;
+    fill: $pinkcolor;
   }
 
   &__logo:active &__path {
-    fill: color.$colorwhite;
+    fill: $colorwhite;
     opacity: 0.3;
   }
 
@@ -26,27 +26,27 @@
   }
 
   &__link {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
-    color: color.$colorwhite;
+    color: $colorwhite;
     text-transform: uppercase;
     text-decoration: none;
 
     &:hover {
-      color: color.$pinkcolor;
+      color: $pinkcolor;
     }
 
     &:active {
-      color: color.$colorwhite;
+      color: $colorwhite;
       opacity: 0.3;
     }
 
     &--active {
       pointer-events: none;
-      border-bottom: 2px solid color.$colorwhite;
+      border-bottom: 2px solid $colorwhite;
     }
   }
 }

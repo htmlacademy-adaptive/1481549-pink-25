@@ -1,24 +1,24 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .upload-button {
   padding: 15px;
 
-  @include mix.font(normal, 700, 18px, 18px);
+  @include font(normal, 700, 18px, 18px);
   text-decoration: none;
-  color: color.$pinkcolor;
+  color: $pinkcolor;
 
-  background-color: color.$colorwhite;
-  border: 3px solid color.$pinkcolor;
+  background-color: $colorwhite;
+  border: 3px solid $pinkcolor;
   box-sizing: border-box;
   border-radius: 29px;
 
   &:hover {
-    color: color.$colorwhite;
-    background-color: color.$pinkcolor;
+    color: $colorwhite;
+    background-color: $pinkcolor;
   }
 
   &:active {
-    color: rgba(color.$colorwhite, 0.3);
+    color: rgba($colorwhite, 0.3);
   }
 }

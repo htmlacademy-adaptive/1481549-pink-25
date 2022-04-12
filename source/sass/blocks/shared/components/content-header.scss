@@ -1,8 +1,8 @@
-@use '../colors.scss' as color;
-@use '../mixins.scss' as mix;
+@import "../colors.scss";
+@import "../mixins.scss";
 
 .content-header {
-  background-color: color.$graycolor;
+  background-color: $graycolor;
   background-image: url("../../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   }
 
   &__header {
-    @include mix.font(normal, 300, 24px, 33px);
-    color: color.$colorwhite;
+    @include font(normal, 300, 24px, 33px);
+    color: $colorwhite;
   }
 }

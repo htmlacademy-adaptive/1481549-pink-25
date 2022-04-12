@@ -1,8 +1,8 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .filter-params {
-  background-color: color.$lightgray;
+  background-color: $lightgray;
 
   &__wrapper {
     width: 900px;

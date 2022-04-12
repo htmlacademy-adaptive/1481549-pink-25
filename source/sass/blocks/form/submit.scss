@@ -1,26 +1,26 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .submit {
   padding: 20px;
 
-  @include mix.font(normal, 700, 18px, 30px);
-  color: color.$colorwhite;
+  @include font(normal, 700, 18px, 30px);
+  color: $colorwhite;
   text-transform: uppercase;
 
-  background-color: color.$submitcolor;
+  background-color: $submitcolor;
   border: none;
   border-radius: 1px;
 
   &:hover {
-    background-color: color.$submithovercolor;
+    background-color: $submithovercolor;
   }
 
   &:active {
-    color: rgba(color.$colorwhite, 0.3);
+    color: rgba($colorwhite, 0.3);
   }
 
   &:disabled {
-    background-color: color.$inputcolor;
+    background-color: $inputcolor;
   }
 }

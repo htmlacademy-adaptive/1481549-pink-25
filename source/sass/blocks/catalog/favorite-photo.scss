@@ -1,5 +1,5 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .favorite-photo {
   &__wrapper {
@@ -8,8 +8,8 @@
   }
 
   &__header {
-    @include mix.font(normal, 700, 12px, 24px);
-    color: color.$colorwhite;
-    background-color: color.$pinkcolor;
+    @include font(normal, 700, 12px, 24px);
+    color: $colorwhite;
+    background-color: $pinkcolor;
   }
 }

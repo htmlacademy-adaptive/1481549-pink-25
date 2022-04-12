@@ -1,26 +1,27 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .post {
-  background-color: color.$graylight;
+  background-color: $graylight;
+
   &__header {
-    @include mix.font(normal, 700, 14px, 24px);
-    color: color.$textcolor;
+    @include font(normal, 700, 14px, 24px);
+    color: $maincolor;
   }
 
   &__time {
-    @include mix.font(normal, 300, 12px, 24px);
-    color: color.$textcolor;
+    @include font(normal, 300, 12px, 24px);
+    color: $maincolor;
     text-transform: uppercase;
   }
 
   &__text {
-    @include mix.font(normal, 400, 14px, 24px);
-    color: color.$textcolor;
+    @include font(normal, 400, 14px, 24px);
+    color: $maincolor;
   }
 
   &__count {
-    @include mix.font(normal, 400, 12px, 24px);
-    color: color.$pinkcolor;
+    @include font(normal, 400, 12px, 24px);
+    color: $pinkcolor;
   }
 }

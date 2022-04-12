@@ -1,5 +1,5 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .popup {
   position: fixed;
@@ -10,16 +10,16 @@
   padding: 55px;
 
   border-radius: 1px;
-  background-color: color.$colorwhite;
-  box-shadow: 0px 7px 15px color.$popupshadow;
+  background-color: $colorwhite;
+  box-shadow: 0 7px 15px $popupshadow;
 
   &__header {
-    @include mix.font(normal, 700, 18px, 24px);
-    color: color.$colorblack;
+    @include font(normal, 700, 18px, 24px);
+    color: $colorblack;
   }
 
   &__text {
-    @include mix.font(normal, 400, 14px, 24px);
-    color: color.$maincolor;
+    @include font(normal, 400, 14px, 24px);
+    color: $maincolor;
   }
 }

@@ -1,5 +1,5 @@
-@use '../shared/colors.scss' as color;
-@use '../shared/mixins.scss' as mix;
+@import "../shared/colors.scss";
+@import "../shared/mixins.scss";
 
 .page-contacts {
   &__wrapper {
@@ -8,16 +8,16 @@
   }
 
   &__logo {
-    @include mix.font(normal, 300, 24px, 120%);
+    @include font(normal, 300, 24px, 120%);
   }
 
   &__header {
-    @include mix.font(normal, 700, 18px, 25px);
+    @include font(normal, 700, 18px, 25px);
   }
 
   &__link {
-    @include mix.font(normal, 300, 24px, 33px);
-    color: color.$pinkcolor;
+    @include font(normal, 300, 24px, 33px);
+    color: $pinkcolor;
     text-decoration: none;
   }
 }

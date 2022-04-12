@@ -1,7 +1,7 @@
-@use '../shared/colors.scss' as color;
+@import "../shared/colors.scss";
 
 .advantages-content {
-  background-color: color.$graylight;
+  background-color: $graylight;
 
   &__wrapper {
     width: 900px;
@@ -15,7 +15,7 @@
   }
 
   &__article {
-    outline: 2px solid red;
+    outline: 2px solid $maincolor;
   }
 
   &__header {
