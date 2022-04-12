@@ -20,6 +20,6 @@
 
   &__text {
     @include mix.font(normal, 400, 14px, 24px);
-    color: color.$popuptext;
+    color: color.$maincolor;
   }
 }
