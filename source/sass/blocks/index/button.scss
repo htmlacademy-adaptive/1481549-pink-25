@@ -2,11 +2,13 @@
 @import "../shared/mixins.scss";
 
 .button {
+  display: block;
   padding: 15px;
 
   @include font(normal, 700, 18px, 18px);
   text-decoration: none;
   color: $colorwhite;
+  text-align: center;
 
   border: 3px solid $colorwhite;
   box-sizing: border-box;

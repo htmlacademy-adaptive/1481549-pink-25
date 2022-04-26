@@ -11,7 +11,7 @@
 <body class="page-body">
 
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper wrapper">
       <a href="" class="page-header__logo">
         <svg class="page-header__svg" width="74" height="23" viewBox="0 0 74 23" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -29,10 +29,8 @@
             fill="white" />
         </svg>
       </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="page-header__nav">
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav page-header__nav--closed">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link page-header__link--active">Главная</a>
@@ -54,38 +52,44 @@
     <h1 class="visually-hidden">Пинк</h1>
     <section class="page-promo">
       <div class="page-promo__wrapper">
-        <h2 class="visually-hidden">Промо</h2>
-        <p class="page-promo__slogan">Взгляните на жизнь <br> иначе!</p>
-        <img class="page-promo__phone" src="./img/phone-screen.png" alt="телефон">
+        <div class="page-promo__slogan-wrapper wrapper">
+          <h2 class="visually-hidden">Промо</h2>
+          <p class="page-promo__slogan">Взгляните на жизнь <br> иначе!</p>
+        </div>
+        <div class="page-promo__img-wrapper">
+          <img class="page-promo__img" src="./img/phone-screen.png" alt="телефон">
+        </div>
         <div class="page-promo__devices">
-          <a href="#" class="button">Скачать приложение</a>
-          <ul class="page-promo__list">
-            <li class="page-promo__item">
-              <a href="#"><img src="./img/devices/apple-logo.svg" width="47" height="56" alt="apple"
-                  class="page-preview__apple"></a>
-            </li>
-            <li class="page-promo__item">
-              <a href="#"><img src="./img/devices/android-logo.svg" width="43" height="47" alt="android"
-                  class="page-preview__android"></a>
-            </li>
-            <li class="page-promo__item">
-              <a href="#"><img src="./img/devices/microsoft-logo.svg" width="44" height="41" alt="widnows"
-                  class="page-preview__windows"></a>
-            </li>
-          </ul>
-          <p class="page-promo__text">
-            <small class="page-promo__small">
-              Доступно для iPhone, iPad, Android, <br>
-              Windows Phone, OS X, Windows 8
-            </small>
-          </p>
+          <div class="wrapper">
+            <a href="#" class="button">Скачать приложение</a>
+            <ul class="page-promo__list">
+              <li class="page-promo__item">
+                <a href="#"><img src="./img/devices/apple-logo.svg" width="47" height="56" alt="apple"
+                    class="page-preview__apple"></a>
+              </li>
+              <li class="page-promo__item">
+                <a href="#"><img src="./img/devices/android-logo.svg" width="43" height="47" alt="android"
+                    class="page-preview__android"></a>
+              </li>
+              <li class="page-promo__item">
+                <a href="#"><img src="./img/devices/microsoft-logo.svg" width="44" height="41" alt="widnows"
+                    class="page-preview__windows"></a>
+              </li>
+            </ul>
+            <p class="page-promo__text">
+              <small class="page-promo__small">
+                Доступно для iPhone, iPad, Android, <br>
+                Windows Phone, OS X, Windows 8
+              </small>
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="page-advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages-promo">
-        <div class="advantages-promo__wrapper">
+        <div class="advantages-promo__wrapper wrapper">
           <h3 class="visually-hidden">Слоган преимуществ</h3>
           <p class="advantages-promo__slogan">
             Устали от серости <br> мегаполиса?
@@ -96,7 +100,7 @@
         </div>
       </div>
       <div class="advantages-content">
-        <div class="advantages-content__wrapper">
+        <div class="advantages-content__wrapper wrapper">
           <h3 class="visually-hidden">Список преимуществ</h3>
           <ul class="advantages-content__list">
             <li class="advantages-content__item">
@@ -106,7 +110,7 @@
                   буквально
                   в
                   несколько кликов!</p>
-                <img class="advantages-content__image" src="https://via.placeholder.com/186x382"
+                <img class="advantages-content__image" src="./img/index/phone-1.png" width="165" height="294"
                   alt="Поднимает настроение">
               </article>
             </li>
@@ -116,7 +120,7 @@
                 <p class="advantages-content__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
                   чтобы
                   усилить эффект</p>
-                <img class="advantages-content__image" src="https://via.placeholder.com/186x382"
+                <img class="advantages-content__image" src="./img/index/phone-2.png" width="165" height="294"
                   alt="Меняет мир вокруг">
               </article>
             </li>
@@ -126,30 +130,33 @@
                 <p class="advantages-content__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                   заводите
                   новых</p>
-                <img class="advantages-content__image" src="https://via.placeholder.com/186x382"
+                <img class="advantages-content__image" src="./img/index/phone-3.png" width="165" height="294"
                   alt="Заводит новых друзей">
               </article>
             </li>
           </ul>
-          <img class="advantages-content__image" src="https://via.placeholder.com/186x382" alt="Заводит новых друзей">
+          <img class="advantages-content__main-image" src="./img/index/phone-main.png" alt="Заводит новых друзей">
         </div>
       </div>
       <div class="advantages-effect">
-        <div class="advantages-effect__wrapper">
-          <h3 class="advantages-effect__header">
-            Эффект на 24 часа!
-          </h3>
-          <p class="advantages-effect__text">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
-            длится целые сутки!
-          </p>
-          <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a>
+        <div class="advantages-effect__wrapper wrapper">
+          <img src="./img/index/timer.svg" width="238" height="276" alt="таймер">
+          <div>
+            <h3 class="advantages-effect__header">
+              Эффект на 24 часа!
+            </h3>
+            <p class="advantages-effect__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения
+              длится целые сутки!
+            </p>
+            <a class="advantages-effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
 
     </section>
     <section class="page-reviews">
-      <div class="page-reviews__wrapper slider">
+      <div class="page-reviews__wrapper wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="page-reviews__list slider__list">
           <li class="page-reviews__item slider__item">
@@ -197,43 +204,88 @@
     <section class="page-prices">
       <div class="page-prices__wrapper">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="prices-table slider">
-          <table class="prices-table__table">
+        <div class="prices slider">
+          <table class="prices__table">
             <thead>
-              <tr>
-                <td></td>
-                <td>
-                  <h3 class="prices-table__header">База</h3>
-                  <p class="prices-table__price">1,99 USD</p>
+              <tr class="prices__row">
+                <td class="prices__cell prices__category"></td>
+                <td class="prices__cell">
+                  <h3 class="prices__header">База</h3>
+                  <p class="prices__price">1,99 USD</p>
                 </td>
-                <td>
-                  <h3 class="prices-table__header">СТАНДАРТ</h3>
-                  <p class="prices-table__price">3,99 USD</p>
+                <td class="prices__cell">
+                  <h3 class="prices__header">СТАНДАРТ</h3>
+                  <p class="prices__price">3,99 USD</p>
                 </td>
-                <td>
-                  <h3 class="prices-table__header">АНЛИМ</h3>
-                  <p class="prices-table__price">9,99 USD</p>
+                <td class="prices__cell">
+                  <h3 class="prices__header">АНЛИМ</h3>
+                  <p class="prices__price">9,99 USD</p>
                 </td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Розовый фильтр</td>
-                <td>Розовый фильтр<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Смайлики<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Комментарии<img src="https://via.placeholder.com/31x21" alt=""></td>
+            <tbody class="prices__body">
+              <tr class="prices__row">
+                <td class="prices__category">Розовый фильтр</td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Розовый фильтр</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Смайлики</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Комментарии</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
               </tr>
-              <tr>
-                <td>Смайлики</td>
-                <td>Розовый фильтр<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Смайлики<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Комментарии<img src="https://via.placeholder.com/31x21" alt=""></td>
+              <tr class="prices__row">
+                <td class="prices__category">Смайлики</td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Розовый фильтр</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Смайлики</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Комментарии</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
               </tr>
-              <tr>
-                <td>Комментарии</td>
-                <td>Розовый фильтр<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Смайлики<img src="https://via.placeholder.com/31x21" alt=""></td>
-                <td>Комментарии<img src="https://via.placeholder.com/31x21" alt=""></td>
+              <tr class="prices__row">
+                <td class="prices__category">Комментарии</td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Розовый фильтр</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Смайлики</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
+                <td class="prices__cell">
+                  <div class="prices__cell-wrapper">
+                    <div class="prices__text">Комментарии</div>
+                    <img src="https://via.placeholder.com/31x21" alt="">
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -246,7 +298,7 @@
       </div>
     </section>
     <section class="page-contacts">
-      <div class="page-contacts__wrapper">
+      <div class="page-contacts__wrapper wrapper">
         <h2 class="page-contacts__logo">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="page-contacts__item">
           <h3 class="page-contacts__header">Звоните:</h3>
@@ -262,21 +314,21 @@
             href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=17.09">ул.
             Большая Конюшенная, 19/8</a>
         </div>
-        <img class="page-contacts__map" src="./img/map.png" alt="Карта, Большая Конюшенная, 19/8">
       </div>
+      <img class="page-contacts__map" src="./img/map.png" alt="Карта, Большая Конюшенная, 19/8">
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper wrapper">
       <img class="page-footer__logo" src="https://via.placeholder.com/145x40" alt="Логотип Пинк">
       <ul class="page-footer__socials">
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="twitter">
         </li>
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="facebook">
         </li>
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="arrow">
         </li>
       </ul>

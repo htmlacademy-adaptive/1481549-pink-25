@@ -2,16 +2,31 @@
 @import "../shared/mixins.scss";
 
 .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin: 0;
   padding: 0;
   outline: 2px solid $submitcolor;
 
   &__name {
     @include font(normal, 700, 18px, 30px);
+
+    @media (min-width: 660px) {
+      order: 2;
+    }
   }
 
   &__exprerience {
+    display: none;
+
     @include font(normal, 400, 14px, 30px);
+
+    @media (min-width: 660px) {
+      display: block;
+      order: 3;
+    }
   }
 
   &__text {

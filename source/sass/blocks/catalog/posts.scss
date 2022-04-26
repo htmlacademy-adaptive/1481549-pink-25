@@ -2,11 +2,6 @@
 @import "../shared/mixins.scss";
 
 .posts {
-  &__wrapper {
-    width: 900px;
-    margin: 0 auto;
-  }
-
   &__list {
     margin: 0;
     padding: 0;

@@ -2,13 +2,38 @@
 @import "../shared/mixins.scss";
 
 .page-contacts {
+  text-align: center;
+
   &__wrapper {
-    width: 900px;
-    margin: 0 auto;
+    @media (min-width: 660px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__item:nth-of-type(3) {
+    // outline: 2px solid greenyellow;
+    @media (min-width: 660px) {
+      grid-row: 3;
+      grid-column: 1/-1;
+    }
+
+    @media (min-width: 1200px) {
+      grid-row: 2;
+      grid-column: 3;
+    }
   }
 
   &__logo {
     @include font(normal, 300, 24px, 120%);
+
+    @media (min-width: 660px) {
+      grid-column: 1/-1;
+    }
   }
 
   &__header {
@@ -19,5 +44,10 @@
     @include font(normal, 300, 24px, 33px);
     color: $pinkcolor;
     text-decoration: none;
+  }
+
+  &__map {
+    width: 100%;
+    clip-path: polygon(49% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 }

@@ -2,9 +2,18 @@
 @import "../shared/mixins.scss";
 
 .advantages-effect {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    background-color: $graylight;
+  }
+
   &__wrapper {
-    width: 900px;
-    margin: 0 auto;
+    display: flex;
   }
 
   &__header {
