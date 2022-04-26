@@ -2,11 +2,6 @@
 @import "../shared/mixins.scss";
 
 .favorite-photo {
-  &__wrapper {
-    width: 900px;
-    margin: 0 auto;
-  }
-
   &__header {
     @include font(normal, 700, 12px, 24px);
     color: $colorwhite;

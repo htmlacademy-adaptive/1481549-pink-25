@@ -3,14 +3,26 @@
 
 .page-footer {
   &__wrapper {
-    width: 900px;
-    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 660px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+      background-color: $graylight;
+    }
   }
 
   &__socials {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
   }
 
   &__about-text {

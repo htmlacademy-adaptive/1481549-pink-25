@@ -8,6 +8,7 @@
 @import "./blocks/index/page-reviews.scss";
 @import "./blocks/index/review.scss";
 @import "./blocks/index/button.scss";
+@import "./blocks/index/prices.scss";
 @import "./blocks/catalog/editor-promo.scss";
 @import "./blocks/catalog/editor.scss";
 @import "./blocks/catalog/favorite-photo.scss";
@@ -28,11 +29,14 @@
 @import "./blocks/form/radio.scss";
 @import "./blocks/form/submit.scss";
 @import "./blocks/form/popup.scss";
+@import "./blocks/shared/components/page-body.scss";
 @import "./blocks/shared/components/content-header.scss";
 @import "./blocks/shared/components/page-footer.scss";
 @import "./blocks/shared/components/page-header.scss";
 @import "./blocks/shared/components/page.scss";
 @import "./blocks/shared/components/promo.scss";
+@import "./blocks/shared/components/wrapper.scss";
+@import "./blocks/shared/components/slider.scss";
 @import "./blocks/shared/visually-hidden.scss";
 @import "./blocks/shared/colors.scss";
 @import "./blocks/shared/fonts.scss";
