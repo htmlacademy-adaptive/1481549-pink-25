@@ -2,6 +2,7 @@
 @import "../shared/mixins.scss";
 
 .cancel-button {
+  display: block;
   padding: 15px;
 
   @include font(normal, 700, 18px, 18px);

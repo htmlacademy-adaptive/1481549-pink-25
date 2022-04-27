@@ -2,6 +2,10 @@
 @import "../shared/mixins.scss";
 
 .favorite-photo {
+  &__photo {
+    width: 100%;
+  }
+
   &__header {
     @include font(normal, 700, 12px, 24px);
     color: $colorwhite;

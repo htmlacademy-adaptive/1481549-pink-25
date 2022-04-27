@@ -2,5 +2,7 @@
 @import "../shared/mixins.scss";
 
 .page-editor {
-  background-color: $lightgray;
+  &__wrapper {
+    background-color: $lightgray;
+  }
 }
