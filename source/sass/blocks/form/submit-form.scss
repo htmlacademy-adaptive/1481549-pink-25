@@ -2,8 +2,14 @@
 @import "../shared/mixins.scss";
 
 .submit-form {
-  width: 900px;
-  margin: 0 auto;
+  grid-column: 1/-1;
+
+  &__wrapper {
+    @media (min-width: 660px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__note {
     @include font(normal, 400, 14px, 30px);

@@ -2,7 +2,16 @@
 @import "../shared/mixins.scss";
 
 .filter-params {
+  grid-column: 1/-1;
+
   background-color: $lightgray;
+
+  @media (min-width: 660px) {
+    background-color: $colorwhite;
+  }
+
+  @media (min-width: 1200px) {
+  }
 
   &__list {
     margin: 0;

@@ -3,10 +3,40 @@
 
 .filter-contacts {
   border: none;
+  grid-column: 1/-1;
+
+  @media (min-width: 660px) {
+    grid-row: 3;
+  }
+
+  @media (min-width: 1200px) {
+    grid-row: 2;
+  }
+
+  &__fieldset {
+    border: none;
+
+    @media (min-width: 660px) {
+      border: 2px solid $inputcolor;
+    }
+  }
+
+  &__legend {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: block;
+    }
+  }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

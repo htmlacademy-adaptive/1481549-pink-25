@@ -2,6 +2,8 @@
 @import "../shared/mixins.scss";
 
 .fieldset {
+  border: 2px solid $inputcolor;
+
   &__legend {
     margin: 0 auto;
     padding: 20px;

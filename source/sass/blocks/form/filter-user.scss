@@ -2,11 +2,24 @@
 @import "../shared/mixins.scss";
 
 .filter-user {
+  grid-column: 1/-1;
   border: none;
+
+  @media (min-width: 660px) {
+  }
+
+  @media (min-width: 1200px) {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  &__wrapper {
+    outline: 2px solid orangered;
   }
 }

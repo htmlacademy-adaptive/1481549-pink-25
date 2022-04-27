@@ -17,7 +17,7 @@
   }
 
   &__input:checked + &__label::before {
-    background-image: url("./img/filters/check.svg");
+    background-image: url("../img/filters/check.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
