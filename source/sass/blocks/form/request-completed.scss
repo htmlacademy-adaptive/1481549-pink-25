@@ -3,7 +3,6 @@
 
 .request-completed {
   grid-column: 1/-1;
-  outline: 2px solid green;
 
   @media (min-width: 660px) {
     display: none;
@@ -22,7 +21,6 @@
   &__button-wrapper {
     display: flex;
     justify-content: center;
-    outline: 2px solid red;
     background-color: $lightgray;
   }
 

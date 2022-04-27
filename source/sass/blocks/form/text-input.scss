@@ -6,12 +6,11 @@
     display: flex;
   }
 
-  @media (min-width: 1200px) {
-  }
-
   &__label {
     display: block;
+
     @include font(normal, 400, 14px, 30px);
+
     color: $pinkcolor;
     text-transform: uppercase;
   }

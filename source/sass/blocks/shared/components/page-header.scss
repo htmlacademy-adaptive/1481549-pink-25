@@ -4,18 +4,12 @@
 .page-header {
   position: absolute;
   width: 100%;
-  outline: 2px solid green;
+  // outline: 2px solid green;
   background-color: rgba($colorblack, 0.3);
 
   &__wrapper {
     display: grid;
     grid-template-columns: min-content 1fr;
-
-    @media (min-width: 660px) {
-    }
-
-    @media (min-width: 1200px) {
-    }
   }
 
   &__logo:hover &__path {
@@ -30,9 +24,6 @@
   &__toggle {
     display: block;
     margin-left: auto;
-
-    @media (min-width: 660px) {
-    }
 
     @media (min-width: 1200px) {
       display: none;
@@ -63,7 +54,7 @@
   }
 
   &__item {
-    background-color: red;
+    background-color: $pinkcolor;
   }
 
   &__link {
