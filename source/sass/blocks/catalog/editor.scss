@@ -1,7 +1,37 @@
 .editor {
+  @media (min-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__fieldset {
     border: none;
     margin: 0;
     padding: 0;
+    // outline: 2px solid rebeccapurple;
+  }
+
+  &__fieldset:nth-of-type(2) {
+    @media (min-width: 660px) {
+      display: none;
+    }
+  }
+
+  &__fieldset:nth-of-type(3) {
+    display: none;
+
+    @media (min-width: 660px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-content: space-between;
+    }
+  }
+
+  &__buttons {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

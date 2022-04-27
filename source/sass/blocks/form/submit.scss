@@ -2,6 +2,7 @@
 @import "../shared/mixins.scss";
 
 .submit {
+  display: block;
   padding: 20px;
 
   @include font(normal, 700, 18px, 30px);

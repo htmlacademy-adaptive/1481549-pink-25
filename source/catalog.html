@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a href="" class="page-header__logo">
+    <div class="page-header__wrapper wrapper">
+      <a href="index.html" class="page-header__logo">
         <svg class="page-header__svg" width="74" height="23" viewBox="0 0 74 23" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path class="page-header__path"
@@ -51,12 +52,12 @@
   <main class="page-main">
     <h1 class="visually-hidden">ПИНК: Каталог</h1>
     <section class="content-header">
-      <div class="content-header__wrapper">
+      <div class="content-header__wrapper wrapper">
         <h2 class="content-header__header">Фотографии пользователей</h2>
       </div>
     </section>
     <section class="promo">
-      <div class="promo__wrapper">
+      <div class="promo__wrapper wrapper">
         <h2 class="visually-hidden">Промо</h2>
         <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</p>
@@ -65,7 +66,7 @@
     <section class="favorite-photo">
       <h2 class="favorite-photo__header">Панорама дня</h2>
       <img class="favorite-photo__photo" src="./img/photos/panorama-tablet.jpg" alt="Вид на мост">
-      <div class="favorite-photo__wrapper">
+      <div class="favorite-photo__wrapper wrapper">
         <article class="post post--big">
           <h3 class="post__header">Анна</h3>
           <span class="post__time">5 минут назад</span>
@@ -79,7 +80,7 @@
       </div>
     </section>
     <section class="posts">
-      <div class="posts__wrapper">
+      <div class="posts__wrapper wrapper">
         <h2 class="visually-hidden">Посты</h2>
         <ul class="posts__list">
           <li class="posts__item">
@@ -146,13 +147,13 @@
       </div>
     </section>
     <section class="editor-promo">
-      <div class="editor-promo__wrapper">
+      <div class="editor-promo__wrapper wrapper">
         <h2 class="visually-hidden">Промо редактора</h2>
         <p class="editor-promo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </section>
     <section class="page-editor">
-      <div class="page-editor__wrapper">
+      <div class="page-editor__wrapper wrapper">
         <h2 class="visually-hidden">Редактор фотографий</h2>
         <form class="editor" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="editor__fieldset">
@@ -177,43 +178,48 @@
             <label for="editor-range" class="visually-hidden">Слайдер</label>
             <input type="range" name="editor-range" id="editor-range">
           </fieldset>
-          <fieldset class="editor__fieldset">
-            <legend class="visually-hidden">Фильтры</legend>
-            <ul class="editor__list">
-              <li class="editor__item">
-                <img src="https://via.placeholder.com/22x22" alt="Иконка обрезки">
-                <label for="editor-crop" class="visually-hidden">Обрезка</label>
-                <input type="range" name="crop" id="editor-crop">
-              </li>
-              <li class="editor__item">
-                <img src="https://via.placeholder.com/22x22" alt="Иконка заливки">
-                <label for="editor-color" class="visually-hidden">Заливка</label>
-                <input type="range" name="color" id="editor-color">
-              </li>
-              <li class="editor__item">
-                <img src="https://via.placeholder.com/22x22" alt="Иконка баланса белого">
-                <label for="editor-balance" class="visually-hidden">Баланс белого</label>
-                <input type="range" name="balance" id="editor-balance">
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit" class="upload-button">Запостить</button>
-          <button type="reset" class="cancel-button" disabled>Отмена</button>
+          <div>
+            <fieldset class="editor__fieldset">
+              <legend class="visually-hidden">Фильтры</legend>
+              <ul class="editor__list">
+                <li class="editor__item">
+                  <img src="https://via.placeholder.com/22x22" alt="Иконка обрезки">
+                  <label for="editor-crop" class="visually-hidden">Обрезка</label>
+                  <input type="range" name="crop" id="editor-crop">
+                </li>
+                <li class="editor__item">
+                  <img src="https://via.placeholder.com/22x22" alt="Иконка заливки">
+                  <label for="editor-color" class="visually-hidden">Заливка</label>
+                  <input type="range" name="color" id="editor-color">
+                </li>
+                <li class="editor__item">
+                  <img src="https://via.placeholder.com/22x22" alt="Иконка баланса белого">
+                  <label for="editor-balance" class="visually-hidden">Баланс белого</label>
+                  <input type="range" name="balance" id="editor-balance">
+                </li>
+              </ul>
+            </fieldset>
+            <div class="editor__buttons">
+              <button type="submit" class="upload-button">Запостить</button>
+              <button type="reset" class="cancel-button" disabled>Отмена</button>
+            </div>
+          </div>
         </form>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="https://via.placeholder.com/145x40" alt="Логотип Пинк">
+    <div class="page-footer__wrapper wrapper">
+      <a href="index.html"><img class="page-footer__logo" src="https://via.placeholder.com/145x40"
+          alt="Логотип Пинк"></a>
       <ul class="page-footer__socials">
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="twitter">
         </li>
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="facebook">
         </li>
-        <li class="page-footer____item">
+        <li class="page-footer__item">
           <img src="https://via.placeholder.com/48x48" alt="arrow">
         </li>
       </ul>

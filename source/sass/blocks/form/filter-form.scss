@@ -1,8 +1,7 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
 
-.page-editor {
-  &__wrapper {
-    background-color: $lightgray;
-  }
+.filter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

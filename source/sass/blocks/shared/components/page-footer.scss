@@ -4,6 +4,7 @@
 .page-footer {
   &__wrapper {
     text-align: center;
+
     @media (min-width: 660px) {
       display: flex;
       justify-content: space-between;
@@ -16,6 +17,7 @@
 
   &__socials {
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;

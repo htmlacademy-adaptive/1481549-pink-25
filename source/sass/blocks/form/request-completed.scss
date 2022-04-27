@@ -1,0 +1,30 @@
+@import "../../blocks/shared/colors.scss";
+@import "../../blocks/shared/mixins.scss";
+
+.request-completed {
+  grid-column: 1/-1;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  &__header {
+    @include font(normal, 700, 18px, 24px);
+    text-align: center;
+  }
+
+  &__text {
+    @include font(normal, 400, 14px, 24px);
+    text-align: center;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: $lightgray;
+  }
+
+  &__submit {
+    width: 100%;
+  }
+}

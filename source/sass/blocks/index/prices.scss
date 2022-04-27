@@ -3,8 +3,7 @@
 
 .prices {
   width: 900px;
-  // transform: translateX(-25px);
-  outline: 2px solid palevioletred;
+  // outline: 2px solid palevioletred;
 
   @media (min-width: 660px) {
     width: 100%;
@@ -13,7 +12,7 @@
   &__table {
     width: 900px;
     transform: translateX(-25px);
-    outline: 2px solid palevioletred;
+    // outline: 2px solid palevioletred;
 
     @media (min-width: 660px) {
       width: 100%;
@@ -35,14 +34,9 @@
     }
   }
 
-  &__row {
-    // width: 100%;
-    // outline: 2px solid skyblue;
-  }
-
   &__cell {
     width: 25%;
-    outline: 2px solid palevioletred;
+    // outline: 2px solid palevioletred;
   }
 
   &__cell-wrapper {

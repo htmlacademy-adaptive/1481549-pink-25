@@ -2,7 +2,18 @@
 @import "../shared/mixins.scss";
 
 .filter-app {
+  grid-column: 1/-1;
   background-color: $lightgray;
+
+  @media (min-width: 660px) {
+    grid-row: 2;
+    background-color: $colorwhite;
+  }
+
+  @media (min-width: 1200px) {
+    grid-row: 1;
+    grid-column: 2/3;
+  }
 
   &__list {
     margin: 0;

@@ -2,13 +2,17 @@
 @import "../mixins.scss";
 
 .content-header {
+  padding-top: 102px;
+  padding-bottom: 84px;
+
   background-color: $graycolor;
-  background-image: url("./img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   &__header {
     @include font(normal, 300, 24px, 33px);
     color: $colorwhite;
+    text-align: center;
   }
 }

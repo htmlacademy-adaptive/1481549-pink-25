@@ -2,6 +2,7 @@
 @import "../shared/mixins.scss";
 
 .filter-feedback {
+  grid-column: 1/-1;
   border: none;
 
   &__textarea {
