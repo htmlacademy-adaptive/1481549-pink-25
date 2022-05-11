@@ -1,0 +1,107 @@
+@import "../shared/vars.scss";
+@import "../shared/colors.scss";
+
+.slider {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &--reviews &__nav {
+      display: none;
+    }
+
+    &--table &__toggles {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--reviews &__nav {
+      display: none;
+    }
+
+    &--table &__toggles {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--reviews &__nav {
+      display: block;
+    }
+
+    &--reviews &__toggles {
+      display: none;
+    }
+
+    &--table &__toggles {
+      display: none;
+    }
+  }
+
+  &__toggles {
+    text-align: center;
+  }
+
+  &__toggle {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba($maincolor, 0.3);
+
+    &--current {
+      background-color: $colorwhite;
+      outline: 3px solid $maincolor;
+    }
+
+    &:hover {
+      background-color: rgba($maincolor, 0.6);
+    }
+
+    &:active {
+      background-color: rgba($maincolor, 0.1);
+    }
+  }
+
+  &__toggle + &__toggle {
+    margin-left: 10px;
+  }
+
+  &__nav {
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover path {
+      opacity: 0.6;
+    }
+
+    &:active path {
+      opacity: 0.1;
+    }
+  }
+
+  &__previous {
+    top: 40%;
+    left: 20px;
+
+    @media (min-width: $desktop-width) {
+      left: 130px;
+    }
+  }
+
+  &__next {
+    top: 40%;
+    right: 20px;
+
+    @media (min-width: $desktop-width) {
+      right: 130px;
+    }
+  }
+}

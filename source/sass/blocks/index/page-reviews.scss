@@ -1,10 +1,17 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .page-reviews {
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/icons/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }

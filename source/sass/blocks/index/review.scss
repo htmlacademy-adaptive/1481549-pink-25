@@ -1,5 +1,6 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .review {
   display: flex;
@@ -8,28 +9,67 @@
 
   margin: 0;
   padding: 0;
-  outline: 2px solid $submitcolor;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 
   &__name {
+    order: 0;
+    margin: 0;
+    padding: 0;
+
     @include font(normal, 700, 18px, 30px);
 
-    @media (min-width: 660px) {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $tablet-width) {
       order: 2;
     }
   }
 
   &__exprerience {
-    display: none;
+    margin: 0;
+    padding: 0;
 
     @include font(normal, 400, 14px, 30px);
 
-    @media (min-width: 660px) {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
       display: block;
       order: 3;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 
   &__text {
+    margin: 0;
+    padding: 0;
+
     @include font(normal, 400, 14px, 30px);
+    text-align: center;
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 600px;
+      margin-bottom: 35px;
+    }
   }
 }

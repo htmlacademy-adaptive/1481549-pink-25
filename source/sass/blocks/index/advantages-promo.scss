@@ -1,12 +1,38 @@
 @import "../shared/colors.scss";
+@import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .advantages-promo {
+  margin-bottom: 50px;
+
   &__slogan {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 120%;
+    margin: 0;
+    padding: 0;
+
+    @include font(normal, 300, 24px, 120%);
+    color: $maincolor;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      @include font(normal, 300, 40px, 54px);
+
+      &:nth-of-type(1) br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font(normal, 300, 50px, 68px);
+    }
+  }
+
+  &__slogan + &__slogan {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 }
