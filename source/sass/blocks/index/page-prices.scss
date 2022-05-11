@@ -2,16 +2,14 @@
 @import "../shared/mixins.scss";
 
 .page-prices {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 70px;
   // background-color: $lightgray;
   // clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
   background: linear-gradient(178deg, transparent 50px, $graylight 50px);
   overflow: hidden;
 
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     margin: 0 auto;
     // outline: 2px solid palegreen;
 
