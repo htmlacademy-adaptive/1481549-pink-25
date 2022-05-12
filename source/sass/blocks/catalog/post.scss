@@ -12,6 +12,8 @@
   }
 
   &__content {
+    position: relative;
+
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -25,6 +27,25 @@
     }
 
     @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 31px;
+      padding-bottom: 29px;
+    }
+  }
+
+  &--big &__content {
+    @media (max-width: $mobile-width-only) {
+      width: 250px;
+      padding-top: 25px;
+      padding-bottom: 26px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 560px;
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -86,6 +107,13 @@
     }
   }
 
+  &--big &__stats {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+    }
+  }
+
   &__like {
     margin: 0;
     padding: 0;
@@ -111,5 +139,9 @@
     @include font(normal, 400, 12px, 24px);
     color: $pinkcolor;
     text-transform: uppercase;
+  }
+
+  &--big &__count {
+    margin-right: 20px;
   }
 }

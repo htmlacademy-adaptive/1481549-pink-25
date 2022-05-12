@@ -51,7 +51,7 @@
       </nav>
     </div>
   </header>
-  <main class="page-main">
+  <main class="main-catalog">
     <h1 class="visually-hidden">ПИНК: Каталог</h1>
     <section class="content-header content-header--catalog">
       <div class="content-header__wrapper wrapper">
@@ -68,7 +68,7 @@
         </p>
       </div>
     </section>
-    <section class="favorite-photo">
+    <section class="favorite-photo main-catalog__favorite">
       <h2 class="visually-hidden">Панорама дня</h2>
       <div class="favorite-photo__favorite">
         <div class="wrapper">
@@ -78,14 +78,22 @@
       </div>
       <div class="favorite-photo__wrapper wrapper">
         <article class="post post--big">
-          <h3 class="post__header">Анна</h3>
-          <span class="post__time">5 минут назад</span>
-          <p class="post__text">Прыгать или нет? Напишите в
-            комментарии свой совет и
-            смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <button class="post__like" type="button">Лайк</button>
-          <span class="post__count">Нравится: 215</span>
+          <div class="post__wrapper">
+            <div class="post__content">
+              <div class="post__header">
+                <h3 class="post__name">Анна</h3>
+                <span class="post__time">5 минут назад</span>
+              </div>
+              <p class="post__text">Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!</p>
+              <div class="post__stats">
+                <button class="post__like" type="button" aria-label="Лайк"></button>
+                <span class="post__count">Нравится: 215</span>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </section>

@@ -1,3 +1,4 @@
+@import "./blocks/index/main-index.scss";
 @import "./blocks/index/advantages-content.scss";
 @import "./blocks/index/advantages-effect.scss";
 @import "./blocks/index/advantages-promo.scss";
@@ -8,6 +9,7 @@
 @import "./blocks/index/review.scss";
 @import "./blocks/index/button.scss";
 @import "./blocks/index/prices.scss";
+@import "./blocks/catalog/main-catalog.scss";
 @import "./blocks/catalog/editor-promo.scss";
 @import "./blocks/catalog/editor.scss";
 @import "./blocks/catalog/favorite-photo.scss";
@@ -39,7 +41,6 @@
 @import "./blocks/common/promo.scss";
 @import "./blocks/common/wrapper.scss";
 @import "./blocks/common/slider.scss";
-@import "./blocks/common/main-index.scss";
 @import "./blocks/shared/visually-hidden.scss";
 @import "./blocks/shared/colors.scss";
 @import "./blocks/shared/fonts.scss";
