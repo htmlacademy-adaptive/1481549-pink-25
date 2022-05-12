@@ -1,7 +1,49 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .favorite-photo {
+  &__favorite {
+    position: relative;
+
+    .wrapper {
+      position: relative;
+    }
+  }
+
+  &__panorama {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+
+    background-color: $pinkcolor;
+
+    @include font(normal, 700, 12px, 24px);
+    color: $colorwhite;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile-width-only) {
+      top: 0;
+      right: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
   &__photo {
     width: 100%;
   }
