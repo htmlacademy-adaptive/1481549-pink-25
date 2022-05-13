@@ -1,10 +1,125 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .promo {
   &__text {
-    @include font(normal, 400, 14px, 30px);
+    margin: 0;
+    padding: 0;
+
     color: $maincolor;
     text-align: center;
+
+    @media (max-width: $mobile-width-only) {
+      @include font(normal, 400, 14px, 30px);
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font(normal, 400, 18px, 30px);
+    }
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--catalog {
+      padding-top: 54px;
+      padding-bottom: 60px;
+    }
+
+    &--catalog &__text {
+      &-br1 {
+        display: block;
+      }
+    }
+
+    &--form {
+      padding-top: 54px;
+      padding-bottom: 55px;
+    }
+
+    &--form &__text {
+      &-br1 {
+        display: block;
+      }
+    }
+
+    &--form &__please {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      padding-top: 100px;
+      padding-bottom: 85px;
+    }
+
+    &--catalog &__text {
+      &-br1 {
+        display: none;
+      }
+
+      &-br2 {
+        display: block;
+      }
+    }
+
+    &--form {
+      padding-top: 54px;
+      padding-bottom: 55px;
+    }
+
+    &--form &__text {
+      &-br1 {
+        display: none;
+      }
+
+      &-br2 {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      padding-top: 100px;
+      padding-bottom: 97px;
+    }
+
+    &--catalog &__text {
+      &-br1 {
+        display: none;
+      }
+
+      &-br2 {
+        display: none;
+      }
+
+      &-br3 {
+        display: block;
+      }
+    }
+
+    &--form {
+      padding-top: 54px;
+      padding-bottom: 55px;
+    }
+
+    &--form &__text {
+      &-br1 {
+        display: none;
+      }
+
+      &-br2 {
+        display: none;
+      }
+
+      &-br3 {
+        display: block;
+      }
+    }
   }
 }

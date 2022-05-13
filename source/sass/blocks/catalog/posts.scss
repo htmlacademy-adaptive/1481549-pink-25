@@ -17,4 +17,10 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
+
+  &__item:not(:last-child) {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 20px;
+    }
+  }
 }

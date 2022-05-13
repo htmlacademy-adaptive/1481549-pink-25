@@ -1,18 +1,67 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .filter-user {
   grid-column: 1/-1;
   border: none;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 1/2;
+    margin-left: auto;
+    padding-top: 15px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    // outline: 2px solid $pinkcolor;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 20px;
+      max-width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      width: 431px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__item + &__item {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 29px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 40px;
+    }
+  }
+
+  &__text-input {
+    width: 100%;
+  }
+
+  &__label {
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
+    }
   }
 }

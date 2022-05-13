@@ -2,26 +2,145 @@
 @import "../shared/mixins.scss";
 
 .post {
+  height: 100%;
   background-color: $graylight;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    margin: 0 auto;
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 25px;
+      padding-bottom: 26px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 31px;
+      padding-bottom: 29px;
+    }
+  }
+
+  &--big &__content {
+    @media (max-width: $mobile-width-only) {
+      width: 250px;
+      padding-top: 25px;
+      padding-bottom: 26px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 560px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 31px;
+      padding-bottom: 29px;
+    }
+  }
+
+  &__image {
+    order: -1;
+  }
+
   &__header {
+    display: flex;
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+
     @include font(normal, 700, 14px, 24px);
     color: $maincolor;
   }
 
   &__time {
+    margin: 0;
+    padding: 0;
+
     @include font(normal, 300, 12px, 24px);
     color: $maincolor;
     text-transform: uppercase;
   }
 
   &__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+
     @include font(normal, 400, 14px, 24px);
     color: $maincolor;
   }
 
+  &__stats {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+    }
+  }
+
+  &--big &__stats {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__like {
+    margin: 0;
+    padding: 0;
+    width: 13px;
+    height: 12px;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../img/icons/heart.svg");
+
+    @media (max-width: $mobile-width-only) {
+      margin-right: 16px;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
   &__count {
+    margin: 0;
+    padding: 0;
+
     @include font(normal, 400, 12px, 24px);
     color: $pinkcolor;
+    text-transform: uppercase;
+  }
+
+  &--big &__count {
+    margin-right: 20px;
   }
 }

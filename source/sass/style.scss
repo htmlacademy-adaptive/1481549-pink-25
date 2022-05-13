@@ -1,3 +1,4 @@
+@import "./blocks/index/main-index.scss";
 @import "./blocks/index/advantages-content.scss";
 @import "./blocks/index/advantages-effect.scss";
 @import "./blocks/index/advantages-promo.scss";
@@ -8,6 +9,7 @@
 @import "./blocks/index/review.scss";
 @import "./blocks/index/button.scss";
 @import "./blocks/index/prices.scss";
+@import "./blocks/catalog/main-catalog.scss";
 @import "./blocks/catalog/editor-promo.scss";
 @import "./blocks/catalog/editor.scss";
 @import "./blocks/catalog/favorite-photo.scss";
@@ -16,6 +18,7 @@
 @import "./blocks/catalog/posts.scss";
 @import "./blocks/catalog/cancel-button.scss";
 @import "./blocks/catalog/upload-button.scss";
+@import "./blocks/catalog/range.scss";
 @import "./blocks/form/filter-app.scss";
 @import "./blocks/form/filter-form.scss";
 @import "./blocks/form/filter-contacts.scss";
@@ -27,7 +30,6 @@
 @import "./blocks/form/fieldset.scss";
 @import "./blocks/form/checkbox.scss";
 @import "./blocks/form/radio.scss";
-@import "./blocks/form/request-completed.scss";
 @import "./blocks/form/submit.scss";
 @import "./blocks/form/popup.scss";
 @import "./blocks/common/page-body.scss";
@@ -38,7 +40,6 @@
 @import "./blocks/common/promo.scss";
 @import "./blocks/common/wrapper.scss";
 @import "./blocks/common/slider.scss";
-@import "./blocks/common/main-index.scss";
 @import "./blocks/shared/visually-hidden.scss";
 @import "./blocks/shared/colors.scss";
 @import "./blocks/shared/fonts.scss";

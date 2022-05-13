@@ -1,15 +1,115 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .fieldset {
+  margin: 0;
+  padding: 0;
+
   border: 2px solid $inputcolor;
 
   &__legend {
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 
     @include font(normal, 400, 14px, 30px);
     color: $pinkcolor;
     text-transform: uppercase;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+
+  &--user {
+    border: none;
+
+    @media (min-width: $desktop-width) {
+      height: 100%;
+    }
+  }
+
+  &--params {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 22px;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 35px;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 49px;
+      padding-bottom: 57px;
+    }
+  }
+
+  &--app {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 30px;
+      padding-bottom: 42px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 35px;
+      padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 49px;
+      padding-bottom: 54px;
+    }
+  }
+
+  &--contacts {
+    @media (max-width: $mobile-width-only) {
+      border: none;
+      padding-top: 30px;
+      padding-bottom: 42px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 49px;
+      padding-bottom: 54px;
+      border: 2px solid $inputcolor;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 49px;
+      padding-bottom: 54px;
+    }
+  }
+
+  &--feedback {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 42px;
+      padding-bottom: 53px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 39px;
+      padding-bottom: 45px;
+      padding-left: 62px;
+      padding-right: 62px;
+    }
   }
 }

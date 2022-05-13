@@ -1,11 +1,18 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .submit-form {
   grid-column: 1/-1;
 
   &__wrapper {
-    @media (min-width: 660px) {
+    @media (max-width: $mobile-width-only) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
     }
@@ -15,6 +22,10 @@
     @include font(normal, 400, 14px, 30px);
     color: $maincolor;
     text-transform: uppercase;
+
+    @media (max-width: $mobile-width-only) {
+      align-self: center;
+    }
   }
 
   &__emphasis {

@@ -1,8 +1,30 @@
 @import "../shared/colors.scss";
-@import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .page-editor {
+  background-color: $lightgray;
+
+  @media (min-width: $desktop-width) {
+    background-color: $colorwhite;
+  }
+
   &__wrapper {
-    background-color: $lightgray;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 20px;
+      max-width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 940px;
+      // padding: 0 130px;
+      padding-left: 80px;
+      padding-right: 90px;
+      background-color: $lightgray;
+    }
   }
 }
