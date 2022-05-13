@@ -96,16 +96,12 @@
       fill: rgba($maincolor, 0.3);
     }
 
-    &:hover {
-      path {
-        fill: rgba($maincolor, 0.5);
-      }
+    &:hover path {
+      fill: rgba($maincolor, 0.5);
     }
 
-    &--active {
-      path {
-        fill: $pinkcolor;
-      }
+    &--active path {
+      fill: $pinkcolor;
     }
   }
 

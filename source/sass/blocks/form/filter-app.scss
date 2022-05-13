@@ -1,23 +1,67 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .filter-app {
   grid-column: 1/-1;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
   background-color: $lightgray;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     grid-row: 2;
     background-color: $colorwhite;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 2/3;
+    margin-right: auto;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // outline: 2px solid $pinkcolor;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 20px;
+      max-width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      width: 431px;
+      // max-width: 500px;
+      // padding-rigth: 130px;
+    }
+  }
+
+  &__fieldset {
+    padding-top: 40px;
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 74px;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 38px;
   }
 }

@@ -6,6 +6,8 @@
   border: none;
 
   &__textarea {
+    display: block;
+
     width: 100%;
     padding: 15px;
     border: 2px solid $inputcolor;

@@ -1,12 +1,17 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .filter-params {
   grid-column: 1/-1;
 
+  @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+  }
+
   background-color: $lightgray;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     background-color: $colorwhite;
   }
 
@@ -14,5 +19,24 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 47px;
+
+      margin-left: 62px;
+      margin-right: 66px;
+    }
+  }
+
+  &__item + &__item {
+    @media (max-width: $desktop-width) {
+      margin-top: 22px;
+    }
   }
 }
