@@ -37,15 +37,30 @@
 
   &__header--hit::before {
     position: absolute;
-    top: 0;
-    left: -30px;
     display: block;
     content: "ХИТ";
-    width: 120px;
+    width: 90px;
     height: 25px;
     color: $colorwhite;
     background-color: $pinkcolor;
     transform: rotate(-45deg);
+
+    @media (max-width: $mobile-width-only) {
+      top: 10px;
+      left: -20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      top: 7px;
+      left: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 17px;
+      top: 15px;
+      left: -20px;
+    }
   }
 
   &__name {
