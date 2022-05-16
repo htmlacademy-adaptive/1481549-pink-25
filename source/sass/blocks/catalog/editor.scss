@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 40px;
     padding-top: 57px;
     padding-bottom: 54px;
   }
@@ -191,6 +191,8 @@
   }
 
   &__buttons {
+    width: 100%;
+
     @media (max-width: $mobile-width-only) {
       border-top: 1px solid rgba($maincolor, 0.1);
       padding-top: 30px;

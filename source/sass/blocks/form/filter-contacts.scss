@@ -61,14 +61,14 @@
   &__input-wrapper {
     display: flex;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       &::after {
         content: "";
         display: block;
         min-width: 59px;
         min-height: 59px;
 
-        background-color: $lightgray;
+        background-color: $inputcolor;
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -76,7 +76,7 @@
   }
 
   &__input-wrapper--phone {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       &::after {
         background-image: url("../img/icons/phone icon.svg");
       }
@@ -84,7 +84,7 @@
   }
 
   &__input-wrapper--mail {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       &::after {
         background-image: url("../img/icons/mail icon.svg");
       }

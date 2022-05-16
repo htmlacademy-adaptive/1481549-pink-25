@@ -11,6 +11,10 @@
     height: 100%;
   }
 
+  // &--big &__wrapper {
+  //   width: 100px;
+  // }
+
   &__content {
     position: relative;
 
@@ -51,6 +55,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 874px;
       padding-top: 31px;
       padding-bottom: 29px;
     }
@@ -58,6 +63,16 @@
 
   &__image {
     order: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+      height: 400px;
+    }
   }
 
   &__header {
@@ -71,6 +86,7 @@
   &__name {
     margin: 0;
     padding: 0;
+    margin-right: 5px;
 
     @include font(normal, 700, 14px, 24px);
     color: $maincolor;

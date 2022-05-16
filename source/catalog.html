@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -74,7 +77,14 @@
         <div class="wrapper">
           <p class="favorite-photo__panorama">Панорама дня</p>
         </div>
-        <img class="favorite-photo__photo" src="./img/photos/panorama-desktop.jpg" alt="Вид на мост">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photos/favorite/panorama-desktop.jpg 1x, img/photos/favorite/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="img/photos/favorite/panorama-tablet.jpg 1x, img/photos/favorite/panorama-tablet@2x.jpg 2x">
+          <img class="favorite-photo__photo" src="img/photos/favorite/panorama-mobile.jpg"
+            srcset="img/photos/favorite/panorama-mobile@2x.jpg 2x" alt="Вид на мост">
+        </picture>
       </div>
       <div class="favorite-photo__wrapper wrapper">
         <article class="post post--big">
@@ -104,7 +114,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-1-mobile.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-1/photo-1-desktop.jpg 1x, img/photos/photo-1/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-1/photo-1-tablet.jpg 1x, img/photos/photo-1/photo-1-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-1/photo-1-mobile.jpg"
+                    srcset="img/photos/photo-1/photo-1-mobile@2x.jpg 2x" alt="Фото 1">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Левон</h3>
@@ -122,7 +139,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-2-mobile.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-2/photo-2-desktop.jpg 1x, img/photos/photo-2/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-2/photo-2-tablet.jpg 1x, img/photos/photo-2/photo-2-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-2/photo-2-mobile.jpg"
+                    srcset="img/photos/photo-2/photo-2-mobile@2x.jpg 2x" alt="Фото 2">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Антон</h3>
@@ -140,7 +164,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-3-tablet.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-3/photo-3-desktop.jpg 1x, img/photos/photo-3/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-3/photo-3-tablet.jpg 1x, img/photos/photo-3/photo-3-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-3/photo-3-mobile.jpg"
+                    srcset="img/photos/photo-3/photo-3-mobile@2x.jpg 2x" alt="Фото 3">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Борис</h3>
@@ -158,7 +189,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-4-tablet.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-4/photo-4-desktop.jpg 1x, img/photos/photo-4/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-4/photo-4-tablet.jpg 1x, img/photos/photo-4/photo-4-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-4/photo-4-mobile.jpg"
+                    srcset="img/photos/photo-4/photo-4-mobile@2x.jpg 2x" alt="Фото 4">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Сергей</h3>
@@ -176,7 +214,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-5-tablet.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-5/photo-5-desktop.jpg 1x, img/photos/photo-5/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-5/photo-5-tablet.jpg 1x, img/photos/photo-5/photo-5-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-5/photo-5-mobile.jpg"
+                    srcset="img/photos/photo-5/photo-5-mobile@2x.jpg 2x" alt="Фото 5">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Максим</h3>
@@ -194,7 +239,14 @@
           <li class="posts__item">
             <article class="post">
               <div class="post__wrapper">
-                <img class="post__image" src="./img/photos/photo-6-tablet.jpg" width="280" height="180" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photos/photo-6/photo-6-desktop.jpg 1x, img/photos/photo-6/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/photos/photo-6/photo-6-tablet.jpg 1x, img/photos/photo-6/photo-6-tablet@2x.jpg 2x">
+                  <img class="post__image" src="img/photos/photo-6/photo-6-mobile.jpg"
+                    srcset="img/photos/photo-6/photo-6-mobile@2x.jpg 2x" alt="Фото 6">
+                </picture>
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Надежда</h3>
@@ -225,9 +277,14 @@
         <form class="editor" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="editor__fieldset editor__photo">
             <legend class="visually-hidden">Фото</legend>
-            <label for="editor-image" class="visually-hidden">Редактируемое фото</label>
-            <input class="editor__photo" type="image" src="./img/photos/photo-7-tablet.png" width="280" height="374"
-              alt="Редактируемое фото" id="editor-image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photos/editor/photo-7-desktop.jpg 1x, img/photos/editor/photo-7-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photos/editor/photo-7-tablet.jpg 1x, img/photos/editor/photo-7-tablet@2x.jpg 2x">
+              <img class="editor__photo" src="img/photos/editor/photo-7-mobile.jpg"
+                srcset="img/photos/editor/photo-7-mobile@2x.jpg 2x" alt="Фото 1">
+            </picture>
           </fieldset>
           <fieldset class="editor__fieldset editor__settings">
             <legend class="visually-hidden">Фильтр</legend>
@@ -264,7 +321,7 @@
               <legend class="visually-hidden">Фильтры</legend>
               <ul class="editor__list">
                 <li class="editor__item editor__item--active">
-                  <img class="editor__icon editor__icon--crop" src="../img/icons/crop.svg" width="22" height="22"
+                  <img class="editor__icon editor__icon--crop" src="./img/icons/crop.svg" width="22" height="22"
                     alt="Иконка обрезки">
                   <div class="range editor__range">
                     <div class="range__scale"></div>
@@ -272,7 +329,7 @@
                   </div>
                 </li>
                 <li class="editor__item">
-                  <img class="editor__icon editor__icon--color" src="../img/icons/color.svg" width="24" height="22"
+                  <img class="editor__icon editor__icon--color" src="./img/icons/color.svg" width="24" height="22"
                     alt="Иконка заливки">
                   <div class="range editor__range">
                     <div class="range__scale"></div>
@@ -280,7 +337,7 @@
                   </div>
                 </li>
                 <li class="editor__item">
-                  <img class="editor__icon editor__icon--balance" src="../img/icons/balance.svg" width="16" height="16"
+                  <img class="editor__icon editor__icon--balance" src="./img/icons/balance.svg" width="16" height="16"
                     alt="Иконка баланса белого">
                   <div class="range editor__range">
                     <div class="range__scale"></div>
