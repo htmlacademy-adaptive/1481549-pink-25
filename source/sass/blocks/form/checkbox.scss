@@ -18,7 +18,7 @@
     margin-right: 22px;
 
     border: 2px solid $inputcolor;
-    border-radius: 1px;
+    border-radius: 3px;
   }
 
   &__input:checked + &__label::before {

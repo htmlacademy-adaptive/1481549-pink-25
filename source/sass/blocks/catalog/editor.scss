@@ -192,6 +192,7 @@
 
   &__buttons {
     width: 100%;
+
     @media (max-width: $mobile-width-only) {
       border-top: 1px solid rgba($maincolor, 0.1);
       padding-top: 30px;

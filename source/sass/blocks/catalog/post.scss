@@ -64,9 +64,6 @@
   &__image {
     order: -1;
 
-    @media (max-width: $mobile-width-only) {
-    }
-
     @media (min-width: $tablet-width) {
       width: 300px;
       height: 300px;
@@ -89,6 +86,7 @@
   &__name {
     margin: 0;
     padding: 0;
+    margin-right: 5px;
 
     @include font(normal, 700, 14px, 24px);
     color: $maincolor;
