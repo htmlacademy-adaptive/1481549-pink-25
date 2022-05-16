@@ -1,5 +1,6 @@
 @import "../shared/colors.scss";
 @import "../shared/mixins.scss";
+@import "../shared/vars.scss";
 
 .posts {
   &__list {
@@ -7,13 +8,13 @@
     padding: 0;
     list-style: none;
 
-    @media (min-width: 660px) {
+    @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

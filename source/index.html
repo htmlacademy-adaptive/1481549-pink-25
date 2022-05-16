@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -61,7 +64,14 @@
           <p class="page-promo__slogan">Взгляните <br> на жизнь <br> иначе!</p>
         </div>
         <div class="page-promo__img-wrapper">
-          <img class="page-promo__img" src="./img/phone-screen.png" alt="телефон">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/index/hand-phone-screen-desktop.png 1x, img/index/hand-phone-screen-desktop@2x.png 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/index/hand-phone-screen-tablet.png 1x, img/index/hand-phone-screen-tablet@2x.png 2x">
+            <img class="page-promo__img" src="img/index/hand-phone-screen-mobile.png"
+              srcset="img/index/hand-phone-screen-mobile@2x.png 2x" alt="Пример нашей работы.">
+          </picture>
         </div>
         <div class="page-promo__devices">
           <div class="page-promo__devices-wrapper">
@@ -113,7 +123,8 @@
                 <p class="advantages-content__text">Приложение позволит вам <br> победить осеннюю хандру <br> и
                   депрессию буквально в <br> несколько кликов!</p>
                 <div class="advantages-content__image-wrapper">
-                  <img class="advantages-content__image" src="./img/index/phone-1.png" width="165" height="294"
+                  <img class="advantages-content__image" src="./img/index/phone-1.png"
+                    srcset="img/index/phone-1.png 1x, img/index/phone-1@2x.png 2x" width="165" height="294"
                     alt="Поднимает настроение">
                 </div>
               </article>
@@ -124,8 +135,9 @@
                 <p class="advantages-content__text">Сделайте снимок и <br> украсьте его смайликом <br> или текстовой
                   подписью, <br> чтобы усилить эффект</p>
                 <div class="advantages-content__image-wrapper">
-                  <img class="advantages-content__image" src="./img/index/phone-2.png" width="165" height="294"
-                    alt="Меняет мир вокруг">
+                  <img class="advantages-content__image" src="./img/index/phone-2.png"
+                    srcset="img/index/phone-2.png 1x, img/index/phone-2@2x.png 2x" width="165" height="294"
+                    alt="ПМеняет мир вокруг">
                 </div>
               </article>
             </li>
@@ -135,13 +147,21 @@
                 <p class="advantages-content__text">Ставьте лайки, <br> комментируйте, делитесь <br> фотографиями с
                   друзьями <br> и заводите новых</p>
                 <div class="advantages-content__image-wrapper">
-                  <img class="advantages-content__image" src="./img/index/phone-3.png" width="165" height="294"
+                  <img class="advantages-content__image" src="./img/index/phone-3.png"
+                    srcset="img/index/phone-3.png 1x, img/index/phone-3@2x.png 2x" width="165" height="294"
                     alt="Заводит новых друзей">
                 </div>
               </article>
             </li>
           </ul>
-          <img class="advantages-content__main-image" src="./img/index/phone-main.png" alt="Заводит новых друзей">
+          <div class="advantages-content__main-image-wrapper">
+            <picture>
+              <source media="(min-width: 660px)"
+                srcset="img/index/phone-main-tablet.png 1x, img/index/phone-main-tablet@2x.png 2x">
+              <img class="advantages-content__main-image" src="img/index/phone-main-mobile.png"
+                srcset="img/index/phone-main-mobile@2x.png 2x" alt="Пример нашей работы.">
+            </picture>
+          </div>
         </div>
       </div>
       <div class="page-advantages__effect advantages-effect">

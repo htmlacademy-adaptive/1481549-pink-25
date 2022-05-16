@@ -3,20 +3,47 @@
 @import "../shared/mixins.scss";
 
 .advantages-content {
-  background: linear-gradient(178deg, transparent 50px, $graylight 50px);
+  position: relative;
+  // background: linear-gradient(175deg, transparent 175px, $graylight 175px);
+
+  &::before {
+    position: absolute;
+    z-index: -10;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    outline: 2px solid red;
+    background-color: $graylight;
+
+    @media (max-width: $mobile-width-only) {
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    @media (min-width: $tablet-width) {
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  overflow: hidden;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 129px;
+    // padding-top: 129px;
+    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 95%);
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 103px;
-    padding-bottom: 59px;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 85%);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 6px;
     padding-bottom: 59px;
+    clip-path: none;
   }
 
   &__wrapper {
@@ -27,6 +54,7 @@
     @media (min-width: $tablet-width) {
       flex-direction: row-reverse;
       justify-content: space-between;
+      // align-items: center;
     }
 
     @media (min-width: $desktop-width) {
@@ -42,13 +70,17 @@
 
     @media (max-width: $mobile-width-only) {
       margin-bottom: 48px;
+      margin-top: 50px;
     }
 
     @media (min-width: $tablet-width) {
       width: 310px;
+      margin-left: 50px;
+      margin-top: 50px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 0;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -61,7 +93,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 46px;
+      margin-top: 26px;
     }
 
     @media (min-width: $desktop-width) {
@@ -89,12 +121,19 @@
   &__header {
     margin: 0;
     padding: 0;
-    margin-bottom: 24px;
 
     @include font(normal, 700, 18px, 24px);
 
     & br {
       display: none;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -181,9 +220,19 @@
     }
   }
 
-  &__main-image {
-    object-fit: contain;
+  &__main-image-wrapper {
+    position: relative;
 
+    @media (max-width: $mobile-width-only) {
+      align-self: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      // top: 30px;
+    }
+  }
+
+  &__main-image {
     @media (min-width: $desktop-width) {
       display: none;
     }

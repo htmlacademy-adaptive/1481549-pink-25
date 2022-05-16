@@ -1,0 +1,15 @@
+@import "../shared/colors.scss";
+@import "../shared/vars.scss";
+@import "../shared/mixins.scss";
+
+.page-advantages {
+  &__promo {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+}
