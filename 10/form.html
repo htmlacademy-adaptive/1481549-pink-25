@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1481549-pink-25/10/">
+</head>
+
+<body class="page-body">
+  <header class="page-header page-header--closed page-body__header">
+    <div class="page-header__wrapper">
+      <div class="page-header__header">
+        <div class="page-header__center">
+          <a href="index.html" class="page-header__logo">
+            <svg class="page-header__svg page-header__svg--mobile" width="74" height="23">
+              <use xlink:href="img/sprite.svg#header-logo--mobile"></use>
+            </svg>
+            <svg class="page-header__svg page-header__svg--tablet" width="147" height="40">
+              <use xlink:href="img/sprite.svg#header-logo--tablet"></use>
+            </svg>
+            <svg class="page-header__svg page-header__svg--desktop" width="147" height="40">
+              <use xlink:href="img/sprite.svg#header-logo--desktop"></use>
+            </svg>
+          </a>
+          <button class="page-header__toggle" type="button" aria-label="меню"></button>
+        </div>
+      </div>
+      <nav class="page-header__nav page-header__nav--closed">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link" href="index.html">Главная</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link page-header__link--active">Конкурс</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="https://up.htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">ПИНК: Форма</h1>
+    <section class="content-header content-header--form">
+      <div class="content-header__wrapper wrapper">
+        <h2 class="content-header__header">Конкурс на самое <br class="content-header__header-br1">
+          безбашенное <br class="content-header__header-br1"> <br class="content-header__header-br2">
+          путешествие с Пинк</h2>
+      </div>
+    </section>
+    <section class="promo promo--form">
+      <div class="promo__wrapper wrapper">
+        <h2 class="visually-hidden">Промо</h2>
+        <p class="promo__text">Поделитесь своей историей и получите <br class="promo__text-br1">
+          шанс выиграть <br class="promo__text-br2"> ценный приз — 1000 <br class="promo__text-br1"> миль на <br
+            class="promo__text-br3"> вашу
+          бонусную карту! <br class="promo__text-br2">
+          <span class="promo__please">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
+    </section>
+    <section class="page-filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="filter-form__wrapper">
+          <div class="filter-user filter-form__user">
+            <div class="filter-user__wrapper">
+              <fieldset class="fieldset fieldset--user">
+                <legend class="visually-hidden">Фамилия и имя</legend>
+                <ul class="filter-user__list">
+                  <li class="filter-user__item">
+                    <div class="text-input filter-user__text-input">
+                      <label class="text-input__label filter-user__label" for="second-name">Фамилия:</label>
+                      <input class="text-input__input filter-user__input" type="text" name="second-name"
+                        id="second-name" placeholder="Укажите фамилию*">
+                    </div>
+                  </li>
+                  <li class="filter-user__item">
+                    <div class="text-input filter-user__text-input">
+                      <label class="text-input__label filter-user__label" for="first-name">Имя:</label>
+                      <input class="text-input__input filter-user__input" type="text" name="first-name" id="first-name"
+                        placeholder="Введите ваше имя*">
+                    </div>
+                  </li>
+                  <li class="filter-user__item">
+                    <div class="text-input filter-user__text-input">
+                      <label class="text-input__label filter-user__label" for="third-name">Отчество:</label>
+                      <input class="text-input__input filter-user__input" type="text" name="third-name" id="third-name"
+                        placeholder="Ну и отчество тоже*">
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filter-params filter-form__params">
+            <div class="filter-params__wrapper wrapper">
+              <fieldset class="fieldset fieldset--params">
+                <legend class="fieldset__legend filter-params__legend">Ваши безбашенные <br>
+                  достижения в путешествии</legend>
+                <ul class="filter-params__list">
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="selfi" id="selfi" checked>
+                      <label class="checkbox__label" for="selfi">Сделал селфи с акулой</label>
+                    </div>
+                  </li>
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="beach" id="beach" checked>
+                      <label class="checkbox__label" for="beach">Обгорел на пляже</label>
+                    </div>
+                  </li>
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="chuck" id="chuck">
+                      <label class="checkbox__label" for="chuck">Видел Чака Норриса</label>
+                    </div>
+                  </li>
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="relic" id="relic">
+                      <label class="checkbox__label" for="relic">Накупил сувениров</label>
+                    </div>
+                  </li>
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="tower" id="tower" checked>
+                      <label class="checkbox__label" for="tower">Удержал башню</label>
+                    </div>
+                  </li>
+                  <li class="filter-params__item">
+                    <div class="checkbox">
+                      <input class="checkbox__input visually-hidden filter-params__checkbox" type="checkbox"
+                        name="hotel" id="hotel">
+                      <label class="checkbox__label" for="hotel">Разгромил отель</label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filter-contacts filter-form__contacts">
+            <div class="filter-contacts__wrapper wrapper">
+              <fieldset class="fieldset fieldset--contacts">
+                <legend class="fieldset__legend filter-contacts__legend">Контактная информация</legend>
+                <ul class="filter-contacts__list">
+                  <li class="filter-contacts__item">
+                    <div class="text-input text-input--contacts">
+                      <label class="text-input__label filter-contacts__label" for="phone">Номер телефона</label>
+                      <div class="filter-contacts__input-wrapper filter-contacts__input-wrapper--phone">
+                        <input class="text-input__input filter-contacts__input" type="text" name="photne" id="phone"
+                          placeholder="Номер, пожалуйста">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filter-contacts__item">
+                    <div class="text-input text-input--contacts">
+                      <label class="text-input__label filter-contacts__label" for="phone">АДРЕС ПОЧТЫ</label>
+                      <div class="filter-contacts__input-wrapper filter-contacts__input-wrapper--mail">
+                        <input class="text-input__input filter-contacts__input" type="text" name="phone" id="email"
+                          placeholder="Введите почту *">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filter-app filter-form__app">
+            <div class="filter-app__wrapper">
+              <fieldset class="fieldset fieldset--app">
+                <legend class="fieldset__legend">С каким приложением
+                  путешествовали?</legend>
+                <ul class="filter-app__list">
+                  <li class="filter-app__item">
+                    <div class="radio">
+                      <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app" id="ios"
+                        checked>
+                      <label class="radio__label filter-app__label" for="ios">Pink для iOS</label>
+                    </div>
+                  </li>
+                  <li class="filter-app__item">
+                    <div class="radio">
+                      <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app"
+                        id="android">
+                      <label class="radio__label filter-app__label" for="android">Pink на Android</label>
+                    </div>
+                  </li>
+                  <li class="filter-app__item">
+                    <div class="radio">
+                      <input class="radio__input visually-hidden filter-app__radio" type="radio" name="app"
+                        id="windows">
+                      <label class="radio__label filter-app__label" for="windows">Windows Phone</label>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filter-feedback filter-form__feedback">
+            <div class="filter-feedback__wrapper wrapper">
+              <fieldset class="fieldset fieldset--feedback">
+                <legend class="fieldset__legend filter-feedback__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+                <label class="visually-hidden" for="feedback">Фидбэк</label>
+                <textarea class="filter-feedback__textarea" name="feedback" id="feedback" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях
+                </textarea>
+              </fieldset>
+            </div>
+          </div>
+          <div class="submit-form">
+            <div class="submit-form__wrapper wrapper">
+              <button class="submit submit-form__button" type="submit">Отправить форму</button>
+              <p class="submit-form__note"><i class="submit-form__emphasis">*</i> — обязательные поля</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="popup popup--error visually-hidden">
+      <div class="popup__wrapper">
+        <h2 class="popup__header popup-error__header">Что-то пошло не так!</h2>
+        <p class="popup__text popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="submit popup__button popup-error__button" type="button">ОК</button>
+      </div>
+    </section>
+    <section class="popup popup--success visually-hidden">
+      <div class="popup__wrapper">
+        <h2 class="popup__header popup-success__header">Ваша заявка отправлена</h2>
+        <p class="popup__text popup-success__text">Спасибо за ваше участие, ваша заявка
+          уже поступила к нам. В ближайшее
+          время мы рассмотрим ее и
+          оповестим вас.</p>
+      </div>
+      <div class="popup__button-wrapper">
+        <button class="submit popup__button popup-success__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper wrapper">
+      <a href="index.html" class="page-footer__pink">
+        <svg class="page-footer__svg page-footer__svg--mobile" width="145" height="40">
+          <use xlink:href="img/sprite.svg#footer-logo--mobile"></use>
+        </svg>
+        <svg class="page-footer__svg page-footer__svg--desktop" width="145" height="40">
+          <use xlink:href="img/sprite.svg#footer-logo--desktop"></use>
+        </svg>
+      </a>
+      <ul class="page-footer__socials">
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__social page-footer__vk">
+            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="page-footer__vkpath" opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                fill="#283645" />
+              <g clip-path="url(#clip0_35858_153)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.5875 22.711C35.712 22.3015 35.5875 22 34.9913 22H33.0225C32.5215 22 32.2905 22.2603 32.1652 22.5475C32.1652 22.5475 31.164 24.9445 29.7458 26.5015C29.2867 26.953 29.0782 27.0963 28.8278 27.0963C28.7025 27.0963 28.5142 26.953 28.5142 26.5428V22.711C28.5142 22.219 28.3763 22 27.9593 22H24.8632C24.5505 22 24.3622 22.228 24.3622 22.4448C24.3622 22.9105 25.0718 23.0185 25.1445 24.3295V27.178C25.1445 27.8028 25.0297 27.916 24.7792 27.916C24.1117 27.916 22.488 25.5078 21.5243 22.7522C21.3375 22.216 21.1485 22 20.6452 22H18.675C18.1125 22 18 22.2603 18 22.5475C18 23.059 18.6675 25.6 21.1087 28.9608C22.7362 31.2558 25.0275 32.5 27.1147 32.5C28.3665 32.5 28.521 32.224 28.521 31.7478V30.013C28.521 29.4603 28.6395 29.35 29.0363 29.35C29.3287 29.35 29.829 29.494 30.9975 30.6003C32.3325 31.912 32.5523 32.5 33.3038 32.5H35.2725C35.835 32.5 36.117 32.224 35.955 31.678C35.7765 31.135 35.139 30.3468 34.2938 29.4115C33.8348 28.879 33.1463 28.3053 32.937 28.018C32.6453 27.6498 32.7285 27.4855 32.937 27.1578C32.937 27.1578 35.337 23.8383 35.5868 22.711H35.5875Z"
+                  fill="#D22856" />
+              </g>
+              <defs>
+                <clipPath id="clip0_35858_153">
+                  <rect width="18" height="18" fill="white" transform="translate(18 18)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__social page-footer__telegram">
+            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                fill="#283645" />
+              <path
+                d="M34.7034 21.202L32.3269 32.4099C32.1474 33.2007 31.68 33.3976 31.0157 33.0252L27.3943 30.3567L25.6472 32.0375C25.4537 32.231 25.2923 32.3924 24.9193 32.3924L25.1798 28.7047L31.8909 22.6404C32.1829 22.3805 31.8274 22.2359 31.4376 22.4964L23.1407 27.7209L19.5688 26.6026C18.792 26.3602 18.7779 25.8258 19.7308 25.4529L33.7016 20.0703C34.3485 19.8279 34.9144 20.2143 34.7034 21.2026V21.202Z"
+                fill="#D22856" />
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__social page-footer__youtube">
+            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                fill="#283645" />
+              <path
+                d="M21.8336 33.8089C21.6463 33.9278 21.4247 33.9941 21.1963 33.9996C20.9678 34.0051 20.7426 33.9495 20.5487 33.8398C20.3548 33.7301 20.2007 33.571 20.1056 33.3824C20.0106 33.1938 19.9787 32.984 20.014 32.779V22.221C19.9787 22.016 20.0106 21.8062 20.1056 21.6176C20.2007 21.429 20.3548 21.2699 20.5487 21.1602C20.7426 21.0505 20.9678 20.9949 21.1963 21.0004C21.4247 21.0059 21.6463 21.0722 21.8336 21.1911L34.2333 26.6928C35.2556 27.1382 35.2556 27.8618 34.2333 28.3072L21.8336 33.8089Z"
+                fill="#D22856" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__about">
+        <p class="page-footer__text">Разработанно</p>
+        <a class="page-footer__htmlacademy"
+          href="https://up.htmlacademy.ru/adaptive/25?_ga=2.88072476.526663630.1652207187-1511332620.1630258644">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#D22856" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
