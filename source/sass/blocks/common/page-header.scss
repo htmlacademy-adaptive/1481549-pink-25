@@ -59,12 +59,44 @@
     }
   }
 
-  &__logo:hover &__path {
-    fill: $pinkcolor;
+  &__logo {
+    color: $colorwhite;
   }
 
-  &__logo:active &__path {
-    fill: $colorwhite;
+  &__svg {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+    }
+  }
+
+  &__logo:hover {
+    color: $pinkcolor;
+  }
+
+  &__logo:active &__svg {
+    color: $colorwhite;
     opacity: 0.3;
   }
 
@@ -140,7 +172,10 @@
   }
 
   &__item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: $desktop-width) {
       height: 63px;

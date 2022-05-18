@@ -38,19 +38,37 @@
   }
 
   &__pink {
+    color: $maincolor;
+
     @media (max-width: $mobile-width-only) {
       margin-bottom: 38px;
     }
   }
 
   &__pink:hover {
-    path:not(:first-child) {
-      fill: $pinkcolor;
-    }
+    color: $pinkcolor;
   }
 
   &__pink:active {
     opacity: 0.3;
+  }
+
+  &__svg {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+    }
   }
 
   &__socials {
