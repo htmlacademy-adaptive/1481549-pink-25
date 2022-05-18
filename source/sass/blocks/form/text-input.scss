@@ -54,4 +54,11 @@
   &__input:focus {
     border-color: $pinkcolor;
   }
+
+  &--contacts &__input {
+    @media (min-width: $tablet-width) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
 }

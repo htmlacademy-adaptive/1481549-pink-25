@@ -67,7 +67,8 @@
         display: block;
         min-width: 59px;
         min-height: 59px;
-
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
         background-color: $inputcolor;
         background-repeat: no-repeat;
         background-position: center;
