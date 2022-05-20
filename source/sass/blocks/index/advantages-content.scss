@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 85%);
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0 87%);
   }
 
   @media (min-width: $desktop-width) {
@@ -75,8 +75,8 @@
 
     @media (min-width: $tablet-width) {
       width: 310px;
-      margin-left: 50px;
-      margin-top: 50px;
+      margin-left: 40px;
+      margin-top: 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -93,7 +93,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 26px;
+      margin-top: 33px;
     }
 
     @media (min-width: $desktop-width) {
@@ -133,7 +133,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     @media (min-width: $desktop-width) {
@@ -146,6 +146,22 @@
         display: block;
       }
     }
+  }
+
+  &__item:nth-child(1) &__header {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item:nth-child(2) &__header {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item:nth-child(3) &__header {
+    margin-bottom: 14px;
   }
 
   &__text {

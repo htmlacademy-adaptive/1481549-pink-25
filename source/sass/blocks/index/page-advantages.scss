@@ -9,7 +9,13 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__effect {
+    @media (min-width: $tablet-width) {
+      margin-top: -17px;
     }
   }
 }

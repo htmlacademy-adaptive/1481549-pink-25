@@ -15,7 +15,7 @@
       transform: translateX(-31%);
     }
 
-    @media (min-width: 660px) {
+    @media (min-width: $tablet-width) {
       width: 100%;
       transform: none;
     }
@@ -28,6 +28,10 @@
     text-align: center;
 
     background-color: $maincolor;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 10px;
+    }
   }
 
   &__header--hit {
@@ -52,9 +56,10 @@
     }
 
     @media (min-width: $tablet-width) {
-      height: 17px;
-      top: 7px;
-      left: -20px;
+      width: 95px;
+      height: 19px;
+      top: 17px;
+      left: -27px;
     }
 
     @media (min-width: $desktop-width) {
@@ -122,7 +127,8 @@
 
     @media (min-width: $tablet-width) {
       width: 152px;
-      padding-left: 10px;
+      padding-top: 5px;
+      padding-left: 15px;
       padding-right: 10px;
     }
 

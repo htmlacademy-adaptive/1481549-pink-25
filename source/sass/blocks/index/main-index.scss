@@ -21,7 +21,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 109px;
+      margin-bottom: 99px;
     }
 
     @media (min-width: $desktop-width) {
@@ -45,11 +45,11 @@
 
   &__prices {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 50px;
+      margin-bottom: 43px;
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 55px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: $desktop-width) {
@@ -59,11 +59,11 @@
 
   &__contacts {
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 0px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 55px;
+      margin-bottom: 30px;
     }
   }
 }

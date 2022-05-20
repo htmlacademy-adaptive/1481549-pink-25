@@ -4,6 +4,7 @@
 .button {
   display: block;
   padding: 15px;
+  // width: 100%;
 
   @include font(normal, 700, 18px, 18px);
   text-decoration: none;

@@ -9,7 +9,7 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      // row-gap: 55px;
+      grid-template-rows: 141px 105px;
     }
 
     @media (min-width: $desktop-width) {
@@ -95,14 +95,26 @@
   }
 
   &__map-wrapper {
-    @media (max-width: $mobile-width-only) {
-      margin-top: 35px;
-      height: 200px;
-      clip-path: polygon(50% 12%, 100% 0, 100% 100%, 0 100%, 0 0);
+    @media (min-width: $tablet-width) {
+      margin-top: -5px;
+      // height: 500px;
+      // clip-path: polygon(50% 23%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
   }
 
   &__map {
     width: 100%;
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: 35px;
+      height: 200px;
+      clip-path: polygon(50% 12%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: -5px;
+      height: 375px;
+      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
   }
 }
