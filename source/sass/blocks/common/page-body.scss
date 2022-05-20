@@ -1,6 +1,9 @@
 .page-body {
   position: relative;
 
+  margin: 0;
+  padding: 0;
+
   &__header {
     position: absolute;
     z-index: 2;

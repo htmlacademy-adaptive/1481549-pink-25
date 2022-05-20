@@ -185,6 +185,12 @@
     }
   }
 
+  &__item + &__item {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
   &__link {
     @include font(normal, 700, 18px, 32px);
     color: $colorwhite;
@@ -202,6 +208,9 @@
 
     @media (min-width: $desktop-width) {
       margin-right: 20px;
+
+      @include font(normal, 400, 18px, 18px);
+      text-transform: none;
 
       &--active {
         pointer-events: none;

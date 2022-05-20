@@ -33,7 +33,7 @@
 
   @media (max-width: $mobile-width-only) {
     // padding-top: 129px;
-    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 95%);
+    clip-path: polygon(0 0, 100% 0%, 100% 94.5%, 0 94.5%);
   }
 
   @media (min-width: $tablet-width) {
@@ -69,8 +69,8 @@
     list-style: none;
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 48px;
-      margin-top: 50px;
+      margin-bottom: 40px;
+      margin-top: 92px;
     }
 
     @media (min-width: $tablet-width) {
@@ -89,7 +89,7 @@
 
   &__item + &__item {
     @media (max-width: $mobile-width-only) {
-      margin-top: 43px;
+      margin-top: 32px;
     }
 
     @media (min-width: $tablet-width) {
@@ -129,7 +129,7 @@
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 24px;
+      margin-bottom: 11px;
     }
 
     @media (min-width: $tablet-width) {

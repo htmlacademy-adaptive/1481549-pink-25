@@ -3,7 +3,7 @@
 .main-index {
   &__promo {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 70px;
+      // margin-bottom: 10px;
     }
 
     @media (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
 
   &__advantages {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 70px;
+      margin-bottom: -5px;
     }
 
     @media (min-width: $tablet-width) {

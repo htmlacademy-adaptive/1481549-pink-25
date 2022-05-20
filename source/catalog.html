@@ -66,19 +66,21 @@
       </div>
     </section>
     <section class="favorite-photo main-catalog__favorite">
-      <h2 class="visually-hidden">Панорама дня</h2>
-      <div class="favorite-photo__favorite">
-        <div class="wrapper">
+      <div class="favorite-photo__wrapper">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <div class="favorite-photo__favorite">
+          <!-- <div class="wrapper">
           <p class="favorite-photo__panorama">Панорама дня</p>
+        </div> -->
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/favorite/panorama-desktop.jpg 1x, img/photos/favorite/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photos/favorite/panorama-tablet.jpg 1x, img/photos/favorite/panorama-tablet@2x.jpg 2x">
+            <img class="favorite-photo__photo" src="img/photos/favorite/panorama-mobile.jpg"
+              srcset="img/photos/favorite/panorama-mobile@2x.jpg 2x" alt="Вид на мост">
+          </picture>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="img/photos/favorite/panorama-desktop.jpg 1x, img/photos/favorite/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)"
-            srcset="img/photos/favorite/panorama-tablet.jpg 1x, img/photos/favorite/panorama-tablet@2x.jpg 2x">
-          <img class="favorite-photo__photo" src="img/photos/favorite/panorama-mobile.jpg"
-            srcset="img/photos/favorite/panorama-mobile@2x.jpg 2x" alt="Вид на мост">
-        </picture>
       </div>
       <div class="favorite-photo__wrapper wrapper">
         <article class="post post--big">
@@ -317,26 +319,29 @@
                 <li class="editor__item editor__item--active">
                   <img class="editor__icon editor__icon--crop" src="./img/icons/crop.svg" width="22" height="22"
                     alt="Иконка обрезки">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="crop" id="crop" value="80">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--crop"></div>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="editor__item">
                   <img class="editor__icon editor__icon--color" src="./img/icons/color.svg" width="24" height="22"
                     alt="Иконка заливки">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="color" id="color" value="20">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--color"></div>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="editor__item">
                   <img class="editor__icon editor__icon--balance" src="./img/icons/balance.svg" width="16" height="16"
                     alt="Иконка баланса белого">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="balance" id="balance" value="50">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--balance"></div>
-                  </div>
+                  </div> -->
                 </li>
               </ul>
             </fieldset>

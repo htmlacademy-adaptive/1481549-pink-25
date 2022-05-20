@@ -3,6 +3,10 @@
 @import "../shared/vars.scss";
 
 .advantages-promo {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 42px;
+  }
+
   &__slogan {
     margin: 0;
     padding: 0;
@@ -26,7 +30,7 @@
 
   &__slogan + &__slogan {
     @media (max-width: $mobile-width-only) {
-      margin-top: 35px;
+      margin-top: 30px;
     }
 
     @media (min-width: $tablet-width) {
