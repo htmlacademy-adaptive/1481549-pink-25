@@ -85,6 +85,10 @@
     @media (min-width: $tablet-width) {
       margin-left: -10px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 3px;
+    }
   }
 
   &__social:active {
@@ -116,6 +120,17 @@
     margin-right: 9px;
 
     @include font(normal, 400, 14px, 18px);
+
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
+      @include font(normal, 400, 18px, 18px);
+    }
+  }
+
+  &__htmlacademy {
+    @media (min-width: $desktop-width) {
+      margin-left: -10px;
+    }
   }
 
   &__htmlacademy:hover path {

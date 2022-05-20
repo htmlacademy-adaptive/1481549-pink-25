@@ -38,6 +38,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -174,6 +175,7 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: flex-end;
+      margin-top: 20px;
     }
   }
 
@@ -197,6 +199,24 @@
     }
   }
 
+  &__item:nth-child(1) {
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
+  }
+
   &__link {
     @include font(normal, 700, 18px, 32px);
     color: $colorwhite;
@@ -213,8 +233,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 20px;
-
       @include font(normal, 400, 18px, 18px);
       text-transform: none;
 
@@ -223,7 +241,6 @@
         text-decoration: underline;
         text-underline-offset: 15px;
         text-decoration-thickness: 2px;
-        // border-bottom: 2px solid $colorwhite;
       }
     }
   }

@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: $graylight;
   }
 
@@ -27,6 +27,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-left: 10px;
       width: 534px;
     }
   }
@@ -57,7 +58,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 37px;
+      margin-top: 90px;
+      margin-bottom: 26px;
 
       @include font(normal, 700, 30px, 30px);
       background-color: $graylight;
@@ -91,7 +93,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 47px;
+      margin-bottom: 31px;
 
       @include font(normal, 400, 18px, 30px);
 
@@ -108,5 +110,9 @@
   &__link {
     @include font(normal, 400, 14px, 24px);
     color: $pinkcolor;
+
+    @media (min-width: $desktop-width) {
+      @include font(normal, 400, 18px, 30px);
+    }
   }
 }

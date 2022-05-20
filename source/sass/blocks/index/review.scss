@@ -11,7 +11,7 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 115px;
   }
 
   &__name {
@@ -28,6 +28,10 @@
     @media (min-width: $tablet-width) {
       order: 2;
       @include font(normal, 700, 20px, 30px);
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font(normal, 700, 24px, 30px);
     }
   }
 
@@ -48,6 +52,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      @include font(normal, 400, 18px, 30px);
       margin-bottom: 0;
     }
   }
@@ -71,7 +76,7 @@
 
     @media (min-width: $desktop-width) {
       width: 600px;
-      margin-bottom: 35px;
+      margin-bottom: 6px;
     }
   }
 }

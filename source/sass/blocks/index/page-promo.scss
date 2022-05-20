@@ -54,8 +54,8 @@
     @media (min-width: $desktop-width) {
       max-width: 1200px;
       padding: 0 130px;
-      grid-template-columns: 346px 594px;
-      row-gap: 51px;
+      grid-template-columns: 300px 594px;
+      row-gap: 46px;
     }
   }
 
@@ -104,7 +104,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: -350px;
+      left: -285px;
     }
   }
 
@@ -162,6 +162,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 0;
       @include font(normal, 300, 50px, 68px);
     }
   }
@@ -215,7 +216,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 58px;
+      margin-top: 50px;
     }
   }
 }

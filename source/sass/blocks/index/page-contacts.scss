@@ -14,6 +14,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 171px 105px;
     }
   }
 
@@ -83,6 +84,10 @@
     padding: 0;
 
     @include font(normal, 700, 18px, 25px);
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &__link {
@@ -92,6 +97,10 @@
     @include font(normal, 300, 24px, 33px);
     color: $pinkcolor;
     text-decoration: none;
+  }
+
+  &__item:nth-child(3) &__link {
+    margin-left: 10px;
   }
 
   &__map-wrapper {
@@ -114,6 +123,12 @@
     @media (min-width: $tablet-width) {
       margin-top: -5px;
       height: 375px;
+      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+      height: 502px;
       clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
   }

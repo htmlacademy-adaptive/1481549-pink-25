@@ -12,6 +12,10 @@
     padding-bottom: 32px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
+
   overflow: hidden;
 
   // background: linear-gradient(175deg, transparent 175px, $graylight 175px);
@@ -35,7 +39,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     }
   }
 
@@ -51,6 +55,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: 1200px;
+      margin-top: 155px;
       padding: 0 130px;
     }
   }

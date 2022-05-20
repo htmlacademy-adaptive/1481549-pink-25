@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 6px;
+    padding-top: 16px;
     padding-bottom: 59px;
     clip-path: none;
   }
@@ -83,7 +83,9 @@
       margin-top: 0;
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      align-content: flex-start;
+      // align-items: flex-start;
+      // justify-content: space-between;
     }
   }
 
@@ -97,7 +99,26 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: auto;
+      margin-top: 0;
+    }
+  }
+
+  &__item:nth-child(1) {
+    @media (min-width: $desktop-width) {
+      margin-left: -11px;
+      margin-right: 90px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      margin-right: 95px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      // margin-left: -140px;
     }
   }
 
@@ -121,6 +142,7 @@
   &__header {
     margin: 0;
     padding: 0;
+    z-index: 10;
 
     @include font(normal, 700, 18px, 24px);
 
@@ -137,7 +159,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
+      margin-top: -25px;
 
       @include font(normal, 700, 30px, 30px);
       text-align: center;
@@ -152,16 +174,31 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 12px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &__item:nth-child(2) &__header {
     @media (min-width: $tablet-width) {
       margin-bottom: 12px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -23px;
+      margin-bottom: 22px;
+    }
   }
 
   &__item:nth-child(3) &__header {
-    margin-bottom: 14px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &__text {
@@ -211,13 +248,13 @@
         display: block;
         content: "";
         width: 300px;
-        height: 59px;
+        height: 80px;
         background-color: $graylight;
       }
 
       &::after {
         position: absolute;
-        bottom: 45px;
+        bottom: 60px;
 
         display: block;
         content: "";
