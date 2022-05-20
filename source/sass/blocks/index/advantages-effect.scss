@@ -53,6 +53,7 @@
     @media (min-width: $tablet-width) {
       margin-top: 43px;
       margin-bottom: 11px;
+      width: 170px;
 
       @include font(normal, 700, 30px, 36px);
     }
@@ -60,6 +61,7 @@
     @media (min-width: $desktop-width) {
       margin-top: 90px;
       margin-bottom: 26px;
+      width: 300px;
 
       @include font(normal, 700, 30px, 30px);
       background-color: $graylight;
@@ -80,30 +82,16 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 9px;
+      width: 300px;
 
       @include font(normal, 400, 14px, 24px);
-
-      &-br1 {
-        display: block;
-      }
-
-      &-br2 {
-        display: none;
-      }
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 31px;
+      width: 534px;
 
       @include font(normal, 400, 18px, 30px);
-
-      &-br1 {
-        display: none;
-      }
-
-      &-br2 {
-        display: block;
-      }
     }
   }
 
