@@ -21,7 +21,7 @@
 
   &__item:not(:last-child) {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
   }
 }

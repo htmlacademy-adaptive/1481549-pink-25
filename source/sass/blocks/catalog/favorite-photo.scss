@@ -7,20 +7,9 @@
     position: relative;
   }
 
-  &__wrapper {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    // outline: 2px solid $pinkcolor;
-
-    @media (min-width: $tablet-width) {
-      max-width: 660px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 1200px;
-    }
-  }
+  // &__wrapper {
+  //   outline: 2px solid red;
+  // }
 
   &__panorama {
     position: absolute;
@@ -57,9 +46,10 @@
 
   &__photo {
     width: 100%;
+    // object-fit: cover;
 
     // @media (max-width: $mobile-width-only) {
-    //   width: 320px;
+    //   width: 100%;
     //   height: 137px;
     // }
 
@@ -72,11 +62,5 @@
     //   width: 1200px;
     //   height: 506px;
     // }
-  }
-
-  &__header {
-    @include font(normal, 700, 12px, 24px);
-    color: $colorwhite;
-    background-color: $pinkcolor;
   }
 }

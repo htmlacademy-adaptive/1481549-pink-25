@@ -9,38 +9,18 @@
     text-align: center;
     color: $maincolor;
 
-    // br {
-    //   display: none;
-    // }
-
     @media (max-width: $mobile-width-only) {
       @include font(normal, 400, 14px, 30px);
-
-      &-br1 {
-        display: block;
-      }
     }
 
     @media (min-width: $tablet-width) {
       @include font(normal, 400, 18px, 30px);
-
-      // &-br1 {
-      //   display: none;
-      // }
-
-      &-br2 {
-        display: block;
-      }
-
-      &-br3 {
-        display: none;
-      }
     }
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 49px;
-    padding-bottom: 52px;
+    padding-top: 36px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $tablet-width) {
