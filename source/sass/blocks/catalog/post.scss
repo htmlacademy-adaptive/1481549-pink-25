@@ -8,6 +8,10 @@
     height: 455px;
   }
 
+  @media (min-width: $desktop-width) {
+    height: 555px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -42,8 +46,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 31px;
-      padding-bottom: 29px;
+      width: 245px;
+      padding-top: 20px;
+      padding-bottom: 24px;
     }
   }
 
@@ -61,9 +66,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 874px;
-      padding-top: 31px;
-      padding-bottom: 29px;
+      width: 890px;
+      padding-top: 24px;
+      padding-bottom: 4px;
     }
   }
 
