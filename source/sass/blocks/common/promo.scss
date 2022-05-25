@@ -37,8 +37,12 @@
 
   @media (min-width: $tablet-width) {
     &--catalog {
-      padding-top: 100px;
-      padding-bottom: 85px;
+      padding-top: 92px;
+      padding-bottom: 77px;
+    }
+
+    &--catalog &__text {
+      width: 450px;
     }
 
     &--form {

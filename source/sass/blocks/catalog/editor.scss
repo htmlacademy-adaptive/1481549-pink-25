@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 47px;
     padding-top: 57px;
     padding-bottom: 54px;
   }
@@ -27,12 +27,23 @@
     border: none;
     margin: 0;
     padding: 0;
-    // outline: 2px solid rebeccapurple;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      margin-bottom: 73px;
+    }
   }
 
   &__photo {
+    width: 100%;
     @media (max-width: $mobile-width-only) {
       margin-bottom: 18px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      height: 400px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -56,6 +67,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
 
     @media (min-width: $desktop-width) {
       grid-row: 1;
@@ -115,16 +131,34 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      padding-top: 10px;
+    }
   }
 
   &__item {
     display: flex;
-    justify-content: space-between;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    // justify-content: space-between;
 
     @media (max-width: $mobile-width-only) {
       display: none;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-bottom: 23px;
+
+      border-bottom: 1px solid rgba($maincolor, 0.1);
+    }
+  }
+
+  &__item + &__item {
+    @media (min-width: $tablet-width) {
+      margin-top: 26px;
     }
   }
 
@@ -134,15 +168,13 @@
     }
   }
 
-  &__item:not(:last-child) {
-    @media (min-width: $tablet-width) {
-      border-bottom: 1px solid rgba($maincolor, 0.1);
-    }
-  }
-
   &__icon {
     @media (max-width: $mobile-width-only) {
       display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
     }
 
     &--crop {
@@ -173,6 +205,7 @@
       @media (min-width: $tablet-width) {
         width: 16px;
         height: 16px;
+        margin-left: 6px;
       }
 
       @media (min-width: $desktop-width) {
@@ -218,8 +251,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      // margin-right: 20px;
-      margin-bottom: 12px;
+      width: 260px;
+      margin-bottom: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -230,5 +263,9 @@
 
   &__reset {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+    }
   }
 }

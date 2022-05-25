@@ -36,6 +36,10 @@
     @include font(normal, 300, 24px, 33px);
     color: $colorwhite;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      @include font(normal, 300, 50px, 68px);
+    }
   }
 
   &--catalog {
@@ -45,6 +49,8 @@
     }
 
     @media (min-width: $tablet-width) {
+      padding-top: 135px;
+      padding-bottom: 85px;
     }
 
     @media (min-width: $desktop-width) {

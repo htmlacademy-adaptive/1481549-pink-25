@@ -2,16 +2,20 @@
 @import "../shared/mixins.scss";
 
 .post {
-  height: 100%;
   background-color: $graylight;
 
-  &__post {
+  @media (min-width: $tablet-width) {
+    height: 455px;
+  }
+
+  &__wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
   &--big {
+    height: 100%;
     margin-top: -4px;
   }
 
@@ -21,18 +25,20 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    width: 250px;
     margin: 0 auto;
 
     @media (max-width: $mobile-width-only) {
+      width: 245px;
       padding-top: 14px;
       padding-bottom: 26px;
     }
 
     @media (min-width: $tablet-width) {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      width: 240px;
+      padding-top: 18px;
+      padding-bottom: 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -50,8 +56,8 @@
 
     @media (min-width: $tablet-width) {
       width: 560px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 25px;
+      padding-bottom: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -115,6 +121,10 @@
 
     @media (max-width: $mobile-width-only) {
       margin-bottom: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
     }
   }
 
