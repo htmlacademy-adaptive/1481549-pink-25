@@ -6,13 +6,19 @@
   grid-column: 1/-1;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 22px;
+    padding-top: 38px;
   }
 
   background-color: $lightgray;
 
   @media (min-width: $tablet-width) {
     background-color: $colorwhite;
+  }
+
+  &__legend {
+    @media (max-width: $mobile-width-only) {
+      @include font(normal, 400, 14px, 18px);
+    }
   }
 
   &__list {
@@ -36,7 +42,7 @@
 
   &__item + &__item {
     @media (max-width: $desktop-width) {
-      margin-top: 22px;
+      margin-top: 47px;
     }
   }
 }

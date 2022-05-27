@@ -5,6 +5,10 @@
 .submit-form {
   grid-column: 1/-1;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 18px;
+  }
+
   &__wrapper {
     @media (max-width: $mobile-width-only) {
       display: flex;
@@ -18,7 +22,16 @@
     }
   }
 
+  &__button {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 33px;
+    }
+  }
+
   &__note {
+    padding: 0;
+    margin: 0;
+
     @include font(normal, 400, 14px, 30px);
     color: $maincolor;
     text-transform: uppercase;

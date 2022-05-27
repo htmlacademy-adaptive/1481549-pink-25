@@ -33,6 +33,15 @@
     &--catalog &__text {
       width: 250px;
     }
+
+    &--form {
+      padding-top: 46px;
+      padding-bottom: 33px;
+    }
+
+    &--form &__please {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

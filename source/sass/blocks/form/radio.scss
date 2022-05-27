@@ -16,6 +16,7 @@
     display: block;
     width: 37px;
     height: 37px;
+    background-color: $colorwhite;
 
     @media (max-width: $mobile-width-only) {
       margin-right: 31px;

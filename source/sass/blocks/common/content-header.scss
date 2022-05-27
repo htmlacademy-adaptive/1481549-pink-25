@@ -58,4 +58,21 @@
       padding-bottom: 50px;
     }
   }
+
+  &--form {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 75px;
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 135px;
+      padding-bottom: 85px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 126px;
+      padding-bottom: 50px;
+    }
+  }
 }

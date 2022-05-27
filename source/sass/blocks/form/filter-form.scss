@@ -7,22 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 74px;
-
-    // width: 100%;
-    // max-width: 320px;
-    // padding: 0 20px;
-    // margin: 0 auto;
-    // // outline: 2px solid $pinkcolor;
-
-    // @media (min-width: $tablet-width) {
-    //   padding: 0 20px;
-    //   max-width: 620px;
-    // }
-
-    @media (min-width: $desktop-width) {
-      // max-width: 1200px;
-      // padding: 0 130px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +18,7 @@
 
   &__user {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 30px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: $tablet-width) {
@@ -62,7 +46,7 @@
 
   &__feedback {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 30px;
+      margin-bottom: 48px;
     }
 
     @media (min-width: $tablet-width) {
@@ -90,7 +74,7 @@
 
   &__app {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 30px;
+      margin-bottom: 38px;
     }
 
     @media (min-width: $tablet-width) {
