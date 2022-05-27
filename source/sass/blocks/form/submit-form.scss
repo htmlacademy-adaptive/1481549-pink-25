@@ -9,6 +9,10 @@
     margin-bottom: 18px;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
   &__wrapper {
     @media (max-width: $mobile-width-only) {
       display: flex;
@@ -26,6 +30,10 @@
     @media (max-width: $mobile-width-only) {
       margin-bottom: 33px;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
   }
 
   &__note {
@@ -38,6 +46,10 @@
 
     @media (max-width: $mobile-width-only) {
       align-self: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 18px;
     }
   }
 

@@ -22,7 +22,7 @@
     // outline: 2px solid $pinkcolor;
 
     @media (min-width: $tablet-width) {
-      padding: 0 20px;
+      padding: 0;
       max-width: 620px;
     }
 
@@ -59,11 +59,19 @@
     @media (max-width: $mobile-width-only) {
       margin-bottom: 18px;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
   }
 
   &__item:nth-child(2) {
     @media (max-width: $mobile-width-only) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
     }
   }
 
@@ -78,7 +86,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-right: 29px;
+      margin-right: 20px;
     }
   }
 }

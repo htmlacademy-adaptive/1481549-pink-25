@@ -55,8 +55,16 @@
     }
 
     &--form {
-      padding-top: 54px;
-      padding-bottom: 55px;
+      padding-top: 92px;
+      padding-bottom: 71px;
+    }
+
+    &--form &__text {
+      width: 500px;
+    }
+
+    &--form &__please {
+      display: block;
     }
   }
 

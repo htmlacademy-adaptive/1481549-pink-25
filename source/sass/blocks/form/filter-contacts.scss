@@ -28,8 +28,8 @@
     list-style: none;
 
     @media (min-width: $tablet-width) {
-      margin-left: 82px;
-      margin-right: 82px;
+      margin-left: 58px;
+      margin-right: 60px;
     }
 
     @media (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 20px;
+      margin-top: 32px;
     }
 
     @media (min-width: $desktop-width) {
@@ -58,6 +58,11 @@
     @media (max-width: $mobile-width-only) {
       margin-left: 24px;
       margin-bottom: 9px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 18px;
+      margin-top: 12px;
     }
   }
 
