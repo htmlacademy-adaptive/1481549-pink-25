@@ -6,13 +6,19 @@
   grid-column: 1/-1;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 22px;
+    padding-top: 38px;
   }
 
   background-color: $lightgray;
 
   @media (min-width: $tablet-width) {
     background-color: $colorwhite;
+  }
+
+  &__legend {
+    @media (max-width: $mobile-width-only) {
+      @include font(normal, 400, 14px, 18px);
+    }
   }
 
   &__list {
@@ -25,18 +31,27 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 47px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 116px;
+      justify-content: space-between;
 
+      margin: 0;
       margin-left: 62px;
       margin-right: 66px;
     }
   }
 
-  &__item + &__item {
+  &__item:nth-child(1n) {
     @media (max-width: $desktop-width) {
-      margin-top: 22px;
+      margin-right: 57px;
+    }
+  }
+
+  &__item:nth-child(2n) {
+    @media (max-width: $desktop-width) {
+      margin-top: 26px;
     }
   }
 }

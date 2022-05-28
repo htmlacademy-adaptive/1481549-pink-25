@@ -3,6 +3,11 @@
 @import "../shared/vars.scss";
 
 .promo {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   &__text {
     margin: 0;
     padding: 0;
@@ -19,31 +24,19 @@
     }
   }
 
-  br {
-    display: none;
-  }
-
   @media (max-width: $mobile-width-only) {
     &--catalog {
-      padding-top: 54px;
-      padding-bottom: 60px;
+      padding-top: 44px;
+      padding-bottom: 50px;
     }
 
     &--catalog &__text {
-      &-br1 {
-        display: block;
-      }
+      width: 250px;
     }
 
     &--form {
-      padding-top: 54px;
-      padding-bottom: 55px;
-    }
-
-    &--form &__text {
-      &-br1 {
-        display: block;
-      }
+      padding-top: 46px;
+      padding-bottom: 33px;
     }
 
     &--form &__please {
@@ -53,73 +46,49 @@
 
   @media (min-width: $tablet-width) {
     &--catalog {
-      padding-top: 100px;
-      padding-bottom: 85px;
+      padding-top: 92px;
+      padding-bottom: 77px;
     }
 
     &--catalog &__text {
-      &-br1 {
-        display: none;
-      }
-
-      &-br2 {
-        display: block;
-      }
+      width: 450px;
     }
 
     &--form {
-      padding-top: 54px;
-      padding-bottom: 55px;
+      padding-top: 92px;
+      padding-bottom: 71px;
     }
 
     &--form &__text {
-      &-br1 {
-        display: none;
-      }
+      width: 500px;
+    }
 
-      &-br2 {
-        display: block;
-      }
+    &--form &__please {
+      display: block;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--catalog {
-      padding-top: 100px;
-      padding-bottom: 97px;
+      padding-top: 91px;
+      padding-bottom: 88px;
     }
 
     &--catalog &__text {
-      &-br1 {
-        display: none;
-      }
-
-      &-br2 {
-        display: none;
-      }
-
-      &-br3 {
-        display: block;
-      }
+      width: 630px;
     }
 
     &--form {
-      padding-top: 54px;
-      padding-bottom: 55px;
+      padding-top: 90px;
+      padding-bottom: 66px;
     }
 
     &--form &__text {
-      &-br1 {
-        display: none;
-      }
+      width: 800px;
+    }
 
-      &-br2 {
-        display: none;
-      }
-
-      &-br3 {
-        display: block;
-      }
+    &--form &__please {
+      display: inline-block;
     }
   }
 }

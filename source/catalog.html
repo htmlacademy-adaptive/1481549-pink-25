@@ -58,35 +58,34 @@
     <section class="promo promo--catalog">
       <div class="promo__wrapper wrapper">
         <h2 class="visually-hidden">Промо</h2>
-        <p class="promo__text">Взгляните на фотографии, которые <br class="promo__text-br1"> выкладывают <br
-            class="promo__text-br2"> пользователи! <br class="promo__text-br3">
-          <br class="promo__text-br1">
-          Видите, как не хватает ваших?
+        <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
       </div>
     </section>
     <section class="favorite-photo main-catalog__favorite">
-      <h2 class="visually-hidden">Панорама дня</h2>
-      <div class="favorite-photo__favorite">
-        <div class="wrapper">
-          <p class="favorite-photo__panorama">Панорама дня</p>
+      <div class="favorite-photo__wrapper">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <div class="favorite-photo__favorite">
+          <div class="wrapper">
+            <p class="favorite-photo__panorama">Панорама дня</p>
+          </div>
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/photos/favorite/panorama-desktop.jpg 1x, img/photos/favorite/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photos/favorite/panorama-tablet.jpg 1x, img/photos/favorite/panorama-tablet@2x.jpg 2x">
+            <img class="favorite-photo__photo" src="img/photos/favorite/panorama-mobile.jpg"
+              srcset="img/photos/favorite/panorama-mobile@2x.jpg 2x" alt="Вид на мост">
+          </picture>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="img/photos/favorite/panorama-desktop.jpg 1x, img/photos/favorite/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)"
-            srcset="img/photos/favorite/panorama-tablet.jpg 1x, img/photos/favorite/panorama-tablet@2x.jpg 2x">
-          <img class="favorite-photo__photo" src="img/photos/favorite/panorama-mobile.jpg"
-            srcset="img/photos/favorite/panorama-mobile@2x.jpg 2x" alt="Вид на мост">
-        </picture>
       </div>
-      <div class="favorite-photo__wrapper wrapper">
+      <div class="favorite-photo__post wrapper">
         <article class="post post--big">
           <div class="post__wrapper">
             <div class="post__content">
               <div class="post__header">
                 <h3 class="post__name">Анна</h3>
-                <span class="post__time">5 минут назад</span>
+                <span class="post__time">(5 минут назад)</span>
               </div>
               <p class="post__text">Прыгать или нет? Напишите в
                 комментарии свой совет и
@@ -119,7 +118,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Левон</h3>
-                    <span class="post__time">5 часов назад</span>
+                    <span class="post__time">(5 часов назад)</span>
                   </div>
                   <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   <div class="post__stats">
@@ -144,7 +143,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Антон</h3>
-                    <span class="post__time">12 часов назад</span>
+                    <span class="post__time">(12 часов назад)</span>
                   </div>
                   <p class="post__text">Соседи будут рады!</p>
                   <div class="post__stats">
@@ -169,7 +168,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Борис</h3>
-                    <span class="post__time">20 часов назад</span>
+                    <span class="post__time">(20 часов назад)</span>
                   </div>
                   <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   <div class="post__stats">
@@ -194,7 +193,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Сергей</h3>
-                    <span class="post__time">25 часов назад</span>
+                    <span class="post__time">(25 часов назад)</span>
                   </div>
                   <p class="post__text">Самая кубанская в мире!</p>
                   <div class="post__stats">
@@ -219,7 +218,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Максим</h3>
-                    <span class="post__time">40 часов назад</span>
+                    <span class="post__time">(40 часов назад)</span>
                   </div>
                   <p class="post__text">Где снег-то?</p>
                   <div class="post__stats">
@@ -244,7 +243,7 @@
                 <div class="post__content">
                   <div class="post__header">
                     <h3 class="post__name">Надежда</h3>
-                    <span class="post__time">45 часов назад</span>
+                    <span class="post__time">(45 часов назад)</span>
                   </div>
                   <p class="post__text">Всем GM и взаимные лайки!</p>
                   <div class="post__stats">
@@ -261,11 +260,11 @@
     <section class="editor-promo">
       <div class="editor-promo__wrapper wrapper">
         <h2 class="visually-hidden">Промо редактора</h2>
-        <p class="editor-promo__text">Затмите их всех! <br class="editor-promo__text-br1"> Выкладывайте все, что
-          накопилось в <br class="editor-promo__text-br3"> телефоне!</p>
+        <p class="editor-promo__text">Затмите их всех! <br> Выкладывайте все, что
+          накопилось в телефоне!</p>
       </div>
     </section>
-    <section class="page-editor">
+    <section class="page-editor main-catalog__editor">
       <div class="page-editor__wrapper">
         <h2 class="visually-hidden">Редактор фотографий</h2>
         <form class="editor" action="https://echo.htmlacademy.ru" method="get">
@@ -317,26 +316,29 @@
                 <li class="editor__item editor__item--active">
                   <img class="editor__icon editor__icon--crop" src="./img/icons/crop.svg" width="22" height="22"
                     alt="Иконка обрезки">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="crop" id="crop" value="80">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--crop"></div>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="editor__item">
                   <img class="editor__icon editor__icon--color" src="./img/icons/color.svg" width="24" height="22"
                     alt="Иконка заливки">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="color" id="color" value="20">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--color"></div>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="editor__item">
                   <img class="editor__icon editor__icon--balance" src="./img/icons/balance.svg" width="16" height="16"
                     alt="Иконка баланса белого">
-                  <div class="range editor__range">
+                  <input class="range editor__range" type="range" name="balance" id="balance" value="50">
+                  <!-- <div class="range editor__range">
                     <div class="range__scale"></div>
                     <div class="range__toggle range__toggle--balance"></div>
-                  </div>
+                  </div> -->
                 </li>
               </ul>
             </fieldset>
@@ -405,7 +407,7 @@
         </li>
       </ul>
       <div class="page-footer__about">
-        <p class="page-footer__text">Разработанно</p>
+        <p class="page-footer__text">Разработано</p>
         <a class="page-footer__htmlacademy"
           href="https://up.htmlacademy.ru/adaptive/25?_ga=2.88072476.526663630.1652207187-1511332620.1630258644">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">

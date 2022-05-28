@@ -5,6 +5,18 @@
 .submit-form {
   grid-column: 1/-1;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
   &__wrapper {
     @media (max-width: $mobile-width-only) {
       display: flex;
@@ -18,7 +30,20 @@
     }
   }
 
+  &__button {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 33px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+  }
+
   &__note {
+    padding: 0;
+    margin: 0;
+
     @include font(normal, 400, 14px, 30px);
     color: $maincolor;
     text-transform: uppercase;
@@ -26,9 +51,21 @@
     @media (max-width: $mobile-width-only) {
       align-self: center;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 18px;
+    }
   }
 
   &__emphasis {
     color: $pinkcolor;
+  }
+
+  &__additional {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }

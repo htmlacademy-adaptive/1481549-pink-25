@@ -2,43 +2,64 @@
 @import "../shared/vars.scss";
 
 .range {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 150px;
-  height: 14px;
-  position: relative;
+  -webkit-appearance: none; /* stylelint-disable-line */
+  background: transparent;
 
-  &__scale {
-    height: 2px;
-    background-color: $maincolor;
-  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; /* stylelint-disable-line */
 
-  &__toggle {
-    width: 14px;
-    height: 14px;
     border: 2px solid $pinkcolor;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
-    background-color: $colorwhite;
-    box-sizing: content-box;
-    position: absolute;
-    left: 0;
+    background: $colorwhite;
     cursor: pointer;
 
-    &--crop {
-      left: 80%;
-    }
+    margin-top: -5px;
+  }
 
-    &--color {
-      left: 20%;
-    }
+  &::-moz-range-thumb {
+    border: 2px solid $pinkcolor;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: $colorwhite;
+    cursor: pointer;
+  }
 
-    &--balance {
-      left: 50%;
-    }
+  &::-ms-thumb {
+    border: 2px solid $pinkcolor;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: $colorwhite;
+    cursor: pointer;
+  }
 
-    &:active {
-      background-color: $pinkcolor;
-    }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $maincolor;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $maincolor;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &:focus {
+    outline: none;
   }
 }

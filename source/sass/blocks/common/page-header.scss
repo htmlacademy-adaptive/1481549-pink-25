@@ -32,17 +32,20 @@
     padding-bottom: 21px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 25px;
+      padding-top: 26px;
+      padding-bottom: 43px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0;
+      padding-bottom: 20px;
     }
   }
 
   &__center {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: 100%;
     max-width: 320px;
@@ -50,7 +53,7 @@
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      padding: 0 20px;
+      padding: 0;
       max-width: 620px;
     }
 
@@ -107,6 +110,10 @@
     cursor: pointer;
 
     background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 15px;
+    }
 
     @media (min-width: $desktop-width) {
       display: none;
@@ -168,6 +175,7 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: flex-end;
+      margin-top: 20px;
     }
   }
 
@@ -177,11 +185,35 @@
     align-items: center;
     justify-content: center;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width-only) {
       height: 63px;
       background-color: $maincolor;
       border-top: 1px solid rgba($colorwhite, 0.15);
       border-bottom: 1px solid $colorblack;
+    }
+  }
+
+  &__item + &__item {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &__item:nth-child(1) {
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
     }
   }
 
@@ -201,14 +233,14 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 20px;
+      @include font(normal, 400, 18px, 18px);
+      text-transform: none;
 
       &--active {
         pointer-events: none;
         text-decoration: underline;
         text-underline-offset: 15px;
         text-decoration-thickness: 2px;
-        // border-bottom: 2px solid $colorwhite;
       }
     }
   }

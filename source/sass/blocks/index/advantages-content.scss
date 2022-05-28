@@ -33,15 +33,15 @@
 
   @media (max-width: $mobile-width-only) {
     // padding-top: 129px;
-    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 95%);
+    clip-path: polygon(0 0, 100% 0%, 100% 94.5%, 0 94.5%);
   }
 
   @media (min-width: $tablet-width) {
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 85%);
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0 87%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 6px;
+    padding-top: 16px;
     padding-bottom: 59px;
     clip-path: none;
   }
@@ -59,7 +59,7 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 
@@ -69,35 +69,57 @@
     list-style: none;
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 48px;
-      margin-top: 50px;
+      margin-bottom: 40px;
+      margin-top: 92px;
     }
 
     @media (min-width: $tablet-width) {
       width: 310px;
-      margin-left: 50px;
-      margin-top: 50px;
+      margin-left: 40px;
+      margin-top: 70px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
-      width: 100%;
+      width: 900px;
       display: flex;
+      margin-left: 0;
+      // align-content: flex-start;
+      // align-items: flex-start;
       justify-content: space-between;
     }
   }
 
   &__item + &__item {
     @media (max-width: $mobile-width-only) {
-      margin-top: 43px;
+      margin-top: 32px;
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 26px;
+      margin-top: 33px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: auto;
+      margin-top: 0;
+    }
+  }
+
+  &__item:nth-child(1) {
+    @media (min-width: $desktop-width) {
+      // margin-left: -11px;
+      // margin-right: 90px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      // margin-right: 95px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      // margin-left: -140px;
     }
   }
 
@@ -114,6 +136,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 252px;
       align-items: center;
     }
   }
@@ -121,6 +144,7 @@
   &__header {
     margin: 0;
     padding: 0;
+    z-index: 10;
 
     @include font(normal, 700, 18px, 24px);
 
@@ -129,15 +153,16 @@
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 24px;
+      margin-bottom: 11px;
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
+      margin-top: -25px;
+      width: 230px;
 
       @include font(normal, 700, 30px, 30px);
       text-align: center;
@@ -148,13 +173,40 @@
     }
   }
 
+  &__item:nth-child(1) &__header {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__item:nth-child(2) &__header {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -23px;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__item:nth-child(3) &__header {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
+  }
+
   &__text {
     margin: 0;
     padding: 0;
-
-    & br {
-      display: none;
-    }
 
     @include font(normal, 400, 14px, 24px);
 
@@ -163,16 +215,15 @@
     }
 
     @media (min-width: $tablet-width) {
+      width: 320px;
       text-align: left;
     }
 
     @media (min-width: $desktop-width) {
+      width: 242px;
+
       @include font(normal, 400, 18px, 30px);
       text-align: center;
-
-      & br {
-        display: block;
-      }
     }
   }
 
@@ -195,13 +246,13 @@
         display: block;
         content: "";
         width: 300px;
-        height: 59px;
+        height: 80px;
         background-color: $graylight;
       }
 
       &::after {
         position: absolute;
-        bottom: 45px;
+        bottom: 70px;
 
         display: block;
         content: "";

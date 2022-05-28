@@ -11,7 +11,7 @@
   background-size: cover;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 95px;
+    padding-top: 91px;
     background-image: url("../img/back-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -45,19 +45,17 @@
 
     @media (min-width: $tablet-width) {
       max-width: 620px;
-      padding: 0 20px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 150px 150px 320px;
-      grid-template-rows: min-content min-content;
-      row-gap: 39px;
+      grid-template-rows: 195px min-content;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 1200px;
       padding: 0 130px;
-      grid-template-columns: 346px 594px;
-      row-gap: 51px;
+      grid-template-columns: 300px 594px;
+      row-gap: 46px;
     }
   }
 
@@ -80,6 +78,10 @@
     max-width: 320px;
     margin: 0 auto;
 
+    @media (max-width: $mobile-width-only) {
+      padding-top: 28px;
+    }
+
     @media (min-width: $tablet-width) {
       margin: 0;
       width: 100%;
@@ -97,12 +99,12 @@
     @media (min-width: $tablet-width) {
       position: relative;
       // bottom: -33px;
-      left: -162px;
+      left: -172px;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      left: -350px;
+      left: -285px;
     }
   }
 
@@ -111,7 +113,7 @@
 
     @media (max-width: $mobile-width-only) {
       padding-top: 28px;
-      padding-bottom: 38px;
+      padding-bottom: 15px;
     }
 
     @media (min-width: $tablet-width) {
@@ -135,6 +137,7 @@
 
     @media (min-width: $tablet-width) {
       max-width: 100%;
+      padding: 0;
     }
   }
 
@@ -153,10 +156,14 @@
     }
 
     @media (min-width: $tablet-width) {
+      margin-top: 20px;
+
       @include font(normal, 300, 40px, 120%);
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 0;
+
       @include font(normal, 300, 50px, 68px);
     }
   }
@@ -174,7 +181,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 39px;
+      margin-top: 44px;
     }
 
     @media (min-width: $desktop-width) {
@@ -200,15 +207,17 @@
     color: $colorwhite;
 
     @media (max-width: $mobile-width-only) {
-      margin-top: 28px;
+      margin-top: 15px;
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 38px;
+      margin-top: 29px;
+
+      @include font(normal, 300, 18px, 24px);
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 58px;
+      margin-top: 50px;
     }
   }
 }

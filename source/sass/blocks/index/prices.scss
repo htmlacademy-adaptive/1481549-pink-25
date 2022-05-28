@@ -8,26 +8,34 @@
   }
 
   &__table {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
 
     @media (max-width: $mobile-width-only) {
-      width: 290%;
-      transform: translateX(-33%);
+      width: 266%;
+      transform: translateX(-31%);
     }
 
-    @media (min-width: 660px) {
+    @media (min-width: $tablet-width) {
       width: 100%;
       transform: none;
     }
   }
 
   &__header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 28px;
     color: $colorwhite;
     text-align: center;
 
     background-color: $maincolor;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 27px;
+    }
   }
 
   &__header--hit {
@@ -46,14 +54,16 @@
     transform: rotate(-45deg);
 
     @media (max-width: $mobile-width-only) {
-      top: 10px;
+      width: 100px;
+      top: 16px;
       left: -20px;
     }
 
     @media (min-width: $tablet-width) {
-      height: 17px;
-      top: 7px;
-      left: -20px;
+      width: 95px;
+      height: 19px;
+      top: 17px;
+      left: -27px;
     }
 
     @media (min-width: $desktop-width) {
@@ -66,9 +76,15 @@
   &__name {
     margin: 0;
     padding: 0;
+    margin-bottom: -3px;
 
     @include font(normal, 700, 16px, 30px);
     text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+      @include font(normal, 700, 18px, 30px);
+      padding-bottom: 5px;
+    }
   }
 
   &__price {
@@ -77,6 +93,10 @@
 
     @include font(normal, 300, 18px, 30px);
     text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+      @include font(normal, 300, 24px, 30px);
+    }
   }
 
   &__empty {
@@ -109,23 +129,28 @@
   }
 
   &__cell {
-    width: 33.33%;
+    width: 25%;
 
     @media (max-width: $mobile-width-only) {
       padding-left: 20px;
       padding-right: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 14px;
+      padding-bottom: 15px;
     }
 
     @media (min-width: $tablet-width) {
       width: 152px;
-      padding-left: 10px;
+      padding-top: 5px;
+      padding-left: 15px;
       padding-right: 10px;
     }
 
     @media (min-width: $desktop-width) {
+      height: 57px;
+      padding-top: 0;
       width: 233px;
+
+      @include font(normal, 400, 20px, 30px);
     }
 
     background-color: $colorwhite;
@@ -150,7 +175,7 @@
     color: $maincolor;
     text-transform: uppercase;
 
-    @media (min-width: 660px) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }

@@ -9,8 +9,6 @@
   background-size: cover;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 102px;
-    padding-bottom: 51px;
     background-image: url("../img/back-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -19,9 +17,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 120px;
-    padding-bottom: 74px;
-
     background-image: url("../img/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -30,9 +25,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 184px;
-    padding-bottom: 104px;
-
     background-image: url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -45,26 +37,42 @@
     color: $colorwhite;
     text-align: center;
 
-    @media (max-width: $mobile-width-only) {
-      &-br1 {
-        display: block;
-      }
+    @media (min-width: $tablet-width) {
+      @include font(normal, 300, 50px, 68px);
+    }
+  }
 
-      &-br2 {
-        display: none;
-      }
+  &--catalog {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 75px;
+      padding-bottom: 56px;
     }
 
     @media (min-width: $tablet-width) {
-      @include font(normal, 300, 50px, 68px);
+      padding-top: 135px;
+      padding-bottom: 85px;
+    }
 
-      &-br1 {
-        display: none;
-      }
+    @media (min-width: $desktop-width) {
+      padding-top: 126px;
+      padding-bottom: 50px;
+    }
+  }
 
-      &-br2 {
-        display: block;
-      }
+  &--form {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 75px;
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 135px;
+      padding-bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 126px;
+      padding-bottom: 50px;
     }
   }
 }

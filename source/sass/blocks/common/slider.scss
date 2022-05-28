@@ -66,7 +66,7 @@
   }
 
   &__toggle + &__toggle {
-    margin-left: 10px;
+    margin-left: 14px;
   }
 
   &__nav {
@@ -88,7 +88,7 @@
   }
 
   &__previous {
-    top: 40%;
+    top: 47%;
     left: 20px;
 
     @media (min-width: $desktop-width) {
@@ -97,7 +97,7 @@
   }
 
   &__next {
-    top: 40%;
+    top: 47%;
     right: 20px;
 
     @media (min-width: $desktop-width) {

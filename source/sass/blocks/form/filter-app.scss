@@ -6,8 +6,8 @@
   grid-column: 1/-1;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 40px;
+    padding-bottom: 38px;
   }
 
   background-color: $lightgray;
@@ -31,7 +31,7 @@
     // outline: 2px solid $pinkcolor;
 
     @media (min-width: $tablet-width) {
-      padding: 0 20px;
+      padding: 0;
       max-width: 620px;
     }
 
@@ -53,7 +53,7 @@
     list-style: none;
 
     @media (min-width: $tablet-width) {
-      margin-left: 82px;
+      margin-left: 60px;
     }
 
     @media (min-width: $desktop-width) {

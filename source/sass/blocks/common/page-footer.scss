@@ -4,7 +4,7 @@
 
 .page-footer {
   @media (max-width: $mobile-width-only) {
-    padding-top: 40px;
+    padding-top: 38px;
     padding-bottom: 40px;
   }
 
@@ -41,7 +41,7 @@
     color: $maincolor;
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 38px;
+      margin-bottom: 36px;
     }
   }
 
@@ -79,7 +79,15 @@
     list-style: none;
 
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 38px;
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: -10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 3px;
     }
   }
 
@@ -109,9 +117,21 @@
   }
 
   &__text {
-    margin-right: 15px;
+    margin-right: 9px;
 
     @include font(normal, 400, 14px, 18px);
+
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
+
+      @include font(normal, 400, 18px, 18px);
+    }
+  }
+
+  &__htmlacademy {
+    @media (min-width: $desktop-width) {
+      margin-left: -10px;
+    }
   }
 
   &__htmlacademy:hover path {

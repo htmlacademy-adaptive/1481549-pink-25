@@ -4,7 +4,17 @@
 .page-prices {
   position: relative;
 
-  padding-bottom: 70px;
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
 
   overflow: hidden;
 
@@ -29,22 +39,23 @@
     }
 
     @media (min-width: $desktop-width) {
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     }
   }
 
   &__wrapper {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 98px;
     // outline: 2px solid palegreen;
 
-    @media (min-width: 660px) {
-      padding: 0 20px;
+    @media (min-width: $tablet-width) {
+      margin-top: 100px;
       max-width: 620px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop-width) {
       max-width: 1200px;
+      margin-top: 155px;
       padding: 0 130px;
     }
   }

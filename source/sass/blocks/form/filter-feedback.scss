@@ -13,5 +13,17 @@
     border: 2px solid $inputcolor;
 
     @include font(normal, 400, 18px, 30px);
+
+    @media (max-width: $mobile-width-only) {
+      height: 202px;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 130px;
+    }
   }
 }

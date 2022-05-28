@@ -4,6 +4,7 @@
 .submit {
   display: block;
   padding: 20px;
+  height: 65px;
 
   @include font(normal, 700, 18px, 30px);
   color: $colorwhite;
