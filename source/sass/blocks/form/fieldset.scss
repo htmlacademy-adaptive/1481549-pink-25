@@ -134,7 +134,7 @@
   &--feedback &__legend {
     @media (max-width: $mobile-width-only) {
       @include font(normal, 400, 14px, 18px);
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }

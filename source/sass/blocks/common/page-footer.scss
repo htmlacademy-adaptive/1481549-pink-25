@@ -123,6 +123,7 @@
 
     @media (min-width: $desktop-width) {
       margin-right: 22px;
+
       @include font(normal, 400, 18px, 18px);
     }
   }

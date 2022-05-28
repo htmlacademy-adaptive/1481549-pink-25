@@ -2,11 +2,11 @@
 @import "../shared/vars.scss";
 
 .range {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* stylelint-disable-line */
   background: transparent;
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* stylelint-disable-line */
 
     border: 2px solid $pinkcolor;
     height: 14px;
@@ -54,19 +54,12 @@
     width: 100%;
     height: 2px;
     cursor: pointer;
-    background: $maincolor;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
   }
 
   &:focus {
     outline: none;
-  }
-
-  &::-ms-track {
-    width: 100%;
-    cursor: pointer;
-
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
   }
 }

@@ -2,10 +2,6 @@
 
 .main-index {
   &__promo {
-    @media (max-width: $mobile-width-only) {
-      // margin-bottom: 10px;
-    }
-
     @media (min-width: $tablet-width) {
       margin-bottom: 47px;
     }
@@ -59,11 +55,11 @@
 
   &__contacts {
     @media (min-width: $tablet-width) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }

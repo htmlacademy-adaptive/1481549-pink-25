@@ -163,6 +163,7 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
+
       @include font(normal, 300, 50px, 68px);
     }
   }

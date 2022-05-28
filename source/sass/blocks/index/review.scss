@@ -27,6 +27,7 @@
 
     @media (min-width: $tablet-width) {
       order: 2;
+
       @include font(normal, 700, 20px, 30px);
     }
 
