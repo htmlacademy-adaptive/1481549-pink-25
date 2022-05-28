@@ -43,14 +43,25 @@
     }
   }
 
+  &__item + &__item {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 46px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 47px;
+    }
+  }
+
   &__item:nth-child(1n) {
-    @media (max-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
       margin-right: 57px;
     }
   }
 
   &__item:nth-child(2n) {
-    @media (max-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       margin-top: 26px;
     }
   }
