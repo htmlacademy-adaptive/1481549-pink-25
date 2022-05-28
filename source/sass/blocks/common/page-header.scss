@@ -185,7 +185,7 @@
     align-items: center;
     justify-content: center;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width-only) {
       height: 63px;
       background-color: $maincolor;
       border-top: 1px solid rgba($colorwhite, 0.15);

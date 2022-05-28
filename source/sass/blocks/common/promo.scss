@@ -79,8 +79,16 @@
     }
 
     &--form {
-      padding-top: 54px;
-      padding-bottom: 55px;
+      padding-top: 90px;
+      padding-bottom: 66px;
+    }
+
+    &--form &__text {
+      width: 800px;
+    }
+
+    &--form &__please {
+      display: inline-block;
     }
   }
 }
