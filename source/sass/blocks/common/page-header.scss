@@ -104,7 +104,8 @@
   }
 
   &__toggle {
-    display: block;
+    // display: block;
+    display: none;
     margin-left: auto;
     border: none;
     cursor: pointer;
@@ -118,6 +119,10 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  &__toggle--visible {
+    display: block;
   }
 
   &--closed &__toggle {
