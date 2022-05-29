@@ -123,6 +123,10 @@
 
   &__toggle--visible {
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--closed &__toggle {

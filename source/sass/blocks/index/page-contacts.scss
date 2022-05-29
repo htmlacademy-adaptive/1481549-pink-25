@@ -24,6 +24,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      margin-left: -10px;
       margin-bottom: 55px;
     }
 
@@ -123,10 +124,10 @@
     @media (min-width: $tablet-width) {
       margin-top: -5px;
       height: 375px;
-      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       margin-top: 30px;
       height: 502px;
       clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);

@@ -7,6 +7,7 @@
   // width: 100%;
 
   @include font(normal, 700, 18px, 18px);
+  letter-spacing: 1px;
   text-decoration: none;
   color: $colorwhite;
   text-align: center;
@@ -14,6 +15,10 @@
   border: 3px solid $colorwhite;
   box-sizing: border-box;
   border-radius: 29px;
+
+  @media (min-width: $desktop-width) {
+    @include font(normal, 700, 19px, 18px);
+  }
 
   &:hover {
     color: $pinkcolor;

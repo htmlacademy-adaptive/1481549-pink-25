@@ -5,7 +5,7 @@
 .popup {
   position: fixed;
   left: 50%;
-  top: 100px;
+  top: 130px;
   transform: translateX(-50%);
 
   border-radius: 1px;
@@ -17,7 +17,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 568px;
+    width: 465px;
+    border-radius: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,19 +28,13 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    padding-top: 55px;
-    padding-left: 55px;
-    padding-right: 55px;
+    align-items: center;
   }
 
   &__button-wrapper {
     display: flex;
     justify-content: center;
     background-color: $lightgray;
-
-    padding-top: 52px;
-    padding-bottom: 52px;
   }
 
   &__header {
@@ -49,6 +44,12 @@
     @include font(normal, 700, 18px, 24px);
     color: $colorblack;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      margin-bottom: 20px;
+      @include font(normal, 700, 30px, 40px);
+    }
   }
 
   &__text {
@@ -59,26 +60,148 @@
     color: $maincolor;
     text-align: center;
 
-    margin-bottom: 50px;
+    @media (max-width: $mobile-width-only) {
+    }
+
+    @media (min-width: $tablet-width) {
+      @include font(normal, 500, 18px, 24px);
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+
+  &--success &__wrapper {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 40px;
+    }
   }
 
   &--success &__header {
-    margin-bottom: 37px;
+    @media (max-width: $mobile-width-only) {
+      width: 250px;
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      margin-bottom: 23px;
+    }
   }
 
   &--success &__text {
-    margin-bottom: 44px;
+    @media (max-width: $mobile-width-only) {
+      width: 230px;
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 340px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      margin-bottom: 39px;
+    }
   }
 
-  &--error &__header {
-    margin-bottom: 37px;
-  }
+  &--success &__button-wrapper {
+    @media (max-width: $mobile-width-only) {
+      padding-top: 48px;
+      padding-bottom: 52px;
+    }
 
-  &--error &__text {
-    margin-bottom: 44px;
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 
   &--error &__wrapper {
-    padding-bottom: 55px;
+    @media (max-width: $mobile-width-only) {
+      padding-top: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 40px;
+    }
+  }
+
+  &--error &__button-wrapper {
+    @media (max-width: $mobile-width-only) {
+      background-color: $colorwhite;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $colorwhite;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $lightgray;
+      padding-top: 50px;
+    }
+  }
+
+  &--error &__header {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+    }
+  }
+
+  &--error &__text {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      margin-bottom: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      margin-bottom: 65px;
+    }
+  }
+
+  &--error &__wrapper {
+    @media (max-width: $mobile-width-only) {
+    }
+
+    @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 }
