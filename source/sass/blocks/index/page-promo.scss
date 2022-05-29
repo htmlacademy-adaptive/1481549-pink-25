@@ -204,6 +204,7 @@
   &__text {
     @include font(normal, 300, 14px, 24px);
     text-align: center;
+    letter-spacing: 1.1px;
     color: $colorwhite;
 
     @media (max-width: $mobile-width-only) {
@@ -211,9 +212,10 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 29px;
+      margin-top: 28px;
 
       @include font(normal, 300, 18px, 24px);
+      letter-spacing: 1.3px;
     }
 
     @media (min-width: $desktop-width) {

@@ -5,7 +5,10 @@
   padding: 0;
 
   &__header {
-    position: absolute;
     z-index: 2;
+  }
+
+  &__header--visible {
+    position: absolute;
   }
 }

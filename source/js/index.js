@@ -2,6 +2,12 @@ const header = document.querySelector(".page-header");
 const nav = document.querySelector(".page-header__nav");
 const toggle = document.querySelector(".page-header__toggle");
 
+header.classList.add("page-body__header--visible");
+toggle.classList.add("page-header__toggle--visible");
+header.classList.remove("page-header--opened");
+header.classList.add("page-header--closed");
+nav.classList.add("page-header__nav--closed");
+
 let menuClosed = true;
 toggle.addEventListener("click", function (event) {
   if (menuClosed) {

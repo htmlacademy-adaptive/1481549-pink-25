@@ -25,4 +25,32 @@
   &:disabled {
     background-color: $inputcolor;
   }
+
+  &--success {
+    @media (max-width: $mobile-width-only) {
+      width: 278px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 460px;
+    }
+  }
+
+  &--error {
+    @media (max-width: $mobile-width-only) {
+      width: 278px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
+  }
 }

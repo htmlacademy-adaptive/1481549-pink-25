@@ -104,7 +104,8 @@
   }
 
   &__toggle {
-    display: block;
+    // display: block;
+    display: none;
     margin-left: auto;
     border: none;
     cursor: pointer;
@@ -114,6 +115,14 @@
     @media (min-width: $tablet-width) {
       margin-top: 15px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__toggle--visible {
+    display: block;
 
     @media (min-width: $desktop-width) {
       display: none;
