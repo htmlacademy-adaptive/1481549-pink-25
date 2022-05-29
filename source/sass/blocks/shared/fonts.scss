@@ -2,28 +2,25 @@
   font-family: "Open Sans";
   font-style: light;
   font-weight: 300;
-  src: local("Open Sans"),
-    local("Open Sans"),
-    url("../../../fonts/opensanslight.woff2") format("woff2"),
-    url("../../../fonts/opensanslight.woff") format("woff");
+  src: local("Open Sans"), local("Open Sans"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Cuprum Regular"),
-    local("Cuprum-Regular"),
-    url("../../../fonts/opensans.woff2") format("woff2"),
-    url("../../../fonts/opensans.woff") format("woff");
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: bold;
   font-weight: 700;
-  src: local("Cuprum Italic"),
-    local("Cuprum-Italic"),
-    url("../../../fonts/opensansbold.woff2") format("woff2"),
-    url("../../../fonts/opensansbold.woff") format("woff");
+  src: local("Cuprum Italic"), local("Cuprum-Italic"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
