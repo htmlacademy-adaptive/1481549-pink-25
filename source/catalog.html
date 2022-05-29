@@ -284,14 +284,16 @@
         <form class="editor" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="editor__fieldset editor__photo">
             <legend class="visually-hidden">Фото</legend>
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/photos/editor/photo-7-desktop.jpg 1x, img/photos/editor/photo-7-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/photos/editor/photo-7-tablet.jpg 1x, img/photos/editor/photo-7-tablet@2x.jpg 2x">
-              <img class="editor__photo" src="img/photos/editor/photo-7-mobile.jpg"
-                srcset="img/photos/editor/photo-7-mobile@2x.jpg 2x" alt="Фото 1">
-            </picture>
+            <a href="img/photos/editor/photo-7-desktop.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photos/editor/photo-7-desktop.jpg 1x, img/photos/editor/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photos/editor/photo-7-tablet.jpg 1x, img/photos/editor/photo-7-tablet@2x.jpg 2x">
+                <img class="editor__photo" src="img/photos/editor/photo-7-mobile.jpg"
+                  srcset="img/photos/editor/photo-7-mobile@2x.jpg 2x" alt="Фото 1">
+              </picture>
+            </a>
           </fieldset>
           <fieldset class="editor__fieldset editor__settings">
             <legend class="visually-hidden">Фильтр</legend>
